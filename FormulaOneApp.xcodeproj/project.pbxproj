@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
+		80C808CA2B28DFAE00E99C8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* ContentView.swift */; };
+		80C808CC2B28DFAF00E99C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CB2B28DFAF00E99C8B /* Assets.xcassets */; };
+		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
+		80C808D92B28DFB000E99C8B /* FormulaOneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808D82B28DFB000E99C8B /* FormulaOneAppTests.swift */; };
+		80C808E32B28DFB000E99C8B /* FormulaOneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808E22B28DFB000E99C8B /* FormulaOneAppUITests.swift */; };
+		80C808E52B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808E42B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80C808D52B28DFB000E99C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C808BC2B28DFAE00E99C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80C808C32B28DFAE00E99C8B;
+			remoteInfo = FormulaOneApp;
+		};
+		80C808DF2B28DFB000E99C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C808BC2B28DFAE00E99C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80C808C32B28DFAE00E99C8B;
+			remoteInfo = FormulaOneApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
+		80C808C92B28DFAE00E99C8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80C808CB2B28DFAF00E99C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80C808D42B28DFB000E99C8B /* FormulaOneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaOneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C808D82B28DFB000E99C8B /* FormulaOneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppTests.swift; sourceTree = "<group>"; };
+		80C808DE2B28DFB000E99C8B /* FormulaOneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaOneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C808E22B28DFB000E99C8B /* FormulaOneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppUITests.swift; sourceTree = "<group>"; };
+		80C808E42B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80C808C12B28DFAE00E99C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808D12B28DFB000E99C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808DB2B28DFB000E99C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80C808BB2B28DFAE00E99C8B = {
+			isa = PBXGroup;
+			children = (
+				80C808C62B28DFAE00E99C8B /* FormulaOneApp */,
+				80C808D72B28DFB000E99C8B /* FormulaOneAppTests */,
+				80C808E12B28DFB000E99C8B /* FormulaOneAppUITests */,
+				80C808C52B28DFAE00E99C8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80C808C52B28DFAE00E99C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */,
+				80C808D42B28DFB000E99C8B /* FormulaOneAppTests.xctest */,
+				80C808DE2B28DFB000E99C8B /* FormulaOneAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C808C62B28DFAE00E99C8B /* FormulaOneApp */ = {
+			isa = PBXGroup;
+			children = (
+				80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */,
+				80C808C92B28DFAE00E99C8B /* ContentView.swift */,
+				80C808CB2B28DFAF00E99C8B /* Assets.xcassets */,
+				80C808CD2B28DFAF00E99C8B /* Preview Content */,
+			);
+			path = FormulaOneApp;
+			sourceTree = "<group>";
+		};
+		80C808CD2B28DFAF00E99C8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80C808D72B28DFB000E99C8B /* FormulaOneAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				80C808D82B28DFB000E99C8B /* FormulaOneAppTests.swift */,
+			);
+			path = FormulaOneAppTests;
+			sourceTree = "<group>";
+		};
+		80C808E12B28DFB000E99C8B /* FormulaOneAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80C808E22B28DFB000E99C8B /* FormulaOneAppUITests.swift */,
+				80C808E42B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift */,
+			);
+			path = FormulaOneAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80C808C32B28DFAE00E99C8B /* FormulaOneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80C808E82B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneApp" */;
+			buildPhases = (
+				80C808C02B28DFAE00E99C8B /* Sources */,
+				80C808C12B28DFAE00E99C8B /* Frameworks */,
+				80C808C22B28DFAE00E99C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormulaOneApp;
+			productName = FormulaOneApp;
+			productReference = 80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80C808D32B28DFB000E99C8B /* FormulaOneAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80C808EB2B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneAppTests" */;
+			buildPhases = (
+				80C808D02B28DFB000E99C8B /* Sources */,
+				80C808D12B28DFB000E99C8B /* Frameworks */,
+				80C808D22B28DFB000E99C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80C808D62B28DFB000E99C8B /* PBXTargetDependency */,
+			);
+			name = FormulaOneAppTests;
+			productName = FormulaOneAppTests;
+			productReference = 80C808D42B28DFB000E99C8B /* FormulaOneAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80C808DD2B28DFB000E99C8B /* FormulaOneAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80C808EE2B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneAppUITests" */;
+			buildPhases = (
+				80C808DA2B28DFB000E99C8B /* Sources */,
+				80C808DB2B28DFB000E99C8B /* Frameworks */,
+				80C808DC2B28DFB000E99C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80C808E02B28DFB000E99C8B /* PBXTargetDependency */,
+			);
+			name = FormulaOneAppUITests;
+			productName = FormulaOneAppUITests;
+			productReference = 80C808DE2B28DFB000E99C8B /* FormulaOneAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80C808BC2B28DFAE00E99C8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					80C808C32B28DFAE00E99C8B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					80C808D32B28DFB000E99C8B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 80C808C32B28DFAE00E99C8B;
+					};
+					80C808DD2B28DFB000E99C8B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 80C808C32B28DFAE00E99C8B;
+					};
+				};
+			};
+			buildConfigurationList = 80C808BF2B28DFAE00E99C8B /* Build configuration list for PBXProject "FormulaOneApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80C808BB2B28DFAE00E99C8B;
+			productRefGroup = 80C808C52B28DFAE00E99C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80C808C32B28DFAE00E99C8B /* FormulaOneApp */,
+				80C808D32B28DFB000E99C8B /* FormulaOneAppTests */,
+				80C808DD2B28DFB000E99C8B /* FormulaOneAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80C808C22B28DFAE00E99C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */,
+				80C808CC2B28DFAF00E99C8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808D22B28DFB000E99C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808DC2B28DFB000E99C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80C808C02B28DFAE00E99C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C808CA2B28DFAE00E99C8B /* ContentView.swift in Sources */,
+				80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808D02B28DFB000E99C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C808D92B28DFB000E99C8B /* FormulaOneAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C808DA2B28DFB000E99C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C808E52B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift in Sources */,
+				80C808E32B28DFB000E99C8B /* FormulaOneAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80C808D62B28DFB000E99C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80C808C32B28DFAE00E99C8B /* FormulaOneApp */;
+			targetProxy = 80C808D52B28DFB000E99C8B /* PBXContainerItemProxy */;
+		};
+		80C808E02B28DFB000E99C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80C808C32B28DFAE00E99C8B /* FormulaOneApp */;
+			targetProxy = 80C808DF2B28DFB000E99C8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80C808E62B28DFB000E99C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80C808E72B28DFB000E99C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80C808E92B28DFB000E99C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneApp/Preview Content\"";
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80C808EA2B28DFB000E99C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneApp/Preview Content\"";
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80C808EC2B28DFB000E99C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormulaOneApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FormulaOneApp";
+			};
+			name = Debug;
+		};
+		80C808ED2B28DFB000E99C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormulaOneApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FormulaOneApp";
+			};
+			name = Release;
+		};
+		80C808EF2B28DFB000E99C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FormulaOneApp;
+			};
+			name = Debug;
+		};
+		80C808F02B28DFB000E99C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EAPL44JCSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FormulaOneAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FormulaOneApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80C808BF2B28DFAE00E99C8B /* Build configuration list for PBXProject "FormulaOneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C808E62B28DFB000E99C8B /* Debug */,
+				80C808E72B28DFB000E99C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80C808E82B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C808E92B28DFB000E99C8B /* Debug */,
+				80C808EA2B28DFB000E99C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80C808EB2B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C808EC2B28DFB000E99C8B /* Debug */,
+				80C808ED2B28DFB000E99C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80C808EE2B28DFB000E99C8B /* Build configuration list for PBXNativeTarget "FormulaOneAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C808EF2B28DFB000E99C8B /* Debug */,
+				80C808F02B28DFB000E99C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80C808BC2B28DFAE00E99C8B /* Project object */;
+}
