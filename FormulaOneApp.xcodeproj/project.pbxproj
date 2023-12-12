@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
-		80C808CA2B28DFAE00E99C8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* ContentView.swift */; };
+		80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* HomeView.swift */; };
 		80C808CC2B28DFAF00E99C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CB2B28DFAF00E99C8B /* Assets.xcassets */; };
 		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
 		80C808D92B28DFB000E99C8B /* FormulaOneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808D82B28DFB000E99C8B /* FormulaOneAppTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
-		80C808C92B28DFAE00E99C8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80C808C92B28DFAE00E99C8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		80C808CB2B28DFAF00E99C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80C808D42B28DFB000E99C8B /* FormulaOneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaOneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,9 +94,10 @@
 		80C808C62B28DFAE00E99C8B /* FormulaOneApp */ = {
 			isa = PBXGroup;
 			children = (
-				80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */,
-				80C808C92B28DFAE00E99C8B /* ContentView.swift */,
-				80C808CB2B28DFAF00E99C8B /* Assets.xcassets */,
+				80C808F42B28E82E00E99C8B /* Networks */,
+				80C808F32B28E81500E99C8B /* Modules */,
+				80C808F22B28E7FE00E99C8B /* System */,
+				80C808F12B28E7E100E99C8B /* Resources */,
 				80C808CD2B28DFAF00E99C8B /* Preview Content */,
 			);
 			path = FormulaOneApp;
@@ -105,6 +106,11 @@
 		80C808CD2B28DFAF00E99C8B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				80C809262B28EBA000E99C8B /* CurrentNextRacesTest */,
+				80C809252B28EB8F00E99C8B /* CurrentResultsTest */,
+				80C809242B28EB7C00E99C8B /* CurrentDriversTest */,
+				80C809232B28EB2000E99C8B /* CurrentConstructorsTest */,
+				80C809222B28EAF800E99C8B /* HistoryAllSeasonsTest */,
 				80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +131,424 @@
 				80C808E42B28DFB000E99C8B /* FormulaOneAppUITestsLaunchTests.swift */,
 			);
 			path = FormulaOneAppUITests;
+			sourceTree = "<group>";
+		};
+		80C808F12B28E7E100E99C8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C808CB2B28DFAF00E99C8B /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80C808F22B28E7FE00E99C8B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		80C808F32B28E81500E99C8B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				80C808FD2B28E8D800E99C8B /* WellcomScreen */,
+				80C808FC2B28E8CA00E99C8B /* Home */,
+				80C808C92B28DFAE00E99C8B /* HomeView.swift */,
+				80C808FB2B28E8BD00E99C8B /* CurrentNextRaces */,
+				80C808FA2B28E8B200E99C8B /* CurrentResults */,
+				80C808F92B28E8A700E99C8B /* CurrentDrivers */,
+				80C808F82B28E89D00E99C8B /* CurrentConstructors */,
+				80C808F72B28E89000E99C8B /* Settings */,
+				80C808F62B28E87200E99C8B /* HistoryAllSeasons */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		80C808F42B28E82E00E99C8B /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				80C808F52B28E85000E99C8B /* Helpers */,
+			);
+			name = Networks;
+			sourceTree = "<group>";
+		};
+		80C808F52B28E85000E99C8B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		80C808F62B28E87200E99C8B /* HistoryAllSeasons */ = {
+			isa = PBXGroup;
+			children = (
+				80C809152B28EA2900E99C8B /* Models */,
+				80C809142B28EA0900E99C8B /* Repository */,
+				80C809132B28E9FF00E99C8B /* ViewModel */,
+				80C809122B28E9F600E99C8B /* Views */,
+			);
+			name = HistoryAllSeasons;
+			sourceTree = "<group>";
+		};
+		80C808F72B28E89000E99C8B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				80C809112B28E9EB00E99C8B /* ViewModel */,
+				80C809102B28E9E300E99C8B /* View */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		80C808F82B28E89D00E99C8B /* CurrentConstructors */ = {
+			isa = PBXGroup;
+			children = (
+				80C8090F2B28E9C300E99C8B /* Models */,
+				80C8090E2B28E9B800E99C8B /* Repository */,
+				80C8090D2B28E9AF00E99C8B /* ViewModel */,
+				80C8090C2B28E9A800E99C8B /* Views */,
+			);
+			name = CurrentConstructors;
+			sourceTree = "<group>";
+		};
+		80C808F92B28E8A700E99C8B /* CurrentDrivers */ = {
+			isa = PBXGroup;
+			children = (
+				80C8090B2B28E99E00E99C8B /* Models */,
+				80C8090A2B28E99400E99C8B /* Repository */,
+				80C809092B28E98B00E99C8B /* ViewModel */,
+				80C809082B28E98400E99C8B /* Views */,
+			);
+			name = CurrentDrivers;
+			sourceTree = "<group>";
+		};
+		80C808FA2B28E8B200E99C8B /* CurrentResults */ = {
+			isa = PBXGroup;
+			children = (
+				80C809072B28E97300E99C8B /* Models */,
+				80C809062B28E96600E99C8B /* Repositoty */,
+				80C809052B28E95C00E99C8B /* ViewModel */,
+				80C809042B28E95400E99C8B /* Views */,
+			);
+			name = CurrentResults;
+			sourceTree = "<group>";
+		};
+		80C808FB2B28E8BD00E99C8B /* CurrentNextRaces */ = {
+			isa = PBXGroup;
+			children = (
+				80C809032B28E94900E99C8B /* Models */,
+				80C809022B28E93F00E99C8B /* Repository */,
+				80C809012B28E93400E99C8B /* ViewModel */,
+				80C809002B28E91C00E99C8B /* Views */,
+			);
+			name = CurrentNextRaces;
+			sourceTree = "<group>";
+		};
+		80C808FC2B28E8CA00E99C8B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		80C808FD2B28E8D800E99C8B /* WellcomScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80C808FE2B28E8F200E99C8B /* Model */,
+				80C808FF2B28E90300E99C8B /* View */,
+			);
+			name = WellcomScreen;
+			sourceTree = "<group>";
+		};
+		80C808FE2B28E8F200E99C8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		80C808FF2B28E90300E99C8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80C809002B28E91C00E99C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091F2B28EAC300E99C8B /* Components */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C809012B28E93400E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C809022B28E93F00E99C8B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		80C809032B28E94900E99C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C809202B28EACD00E99C8B /* ModelDTO */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C809042B28E95400E99C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091D2B28EAAB00E99C8B /* Components */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C809052B28E95C00E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C809062B28E96600E99C8B /* Repositoty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repositoty;
+			sourceTree = "<group>";
+		};
+		80C809072B28E97300E99C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091E2B28EAB600E99C8B /* ModelDTO */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C809082B28E98400E99C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091B2B28EA8E00E99C8B /* Components */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C809092B28E98B00E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C8090A2B28E99400E99C8B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		80C8090B2B28E99E00E99C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091C2B28EA9900E99C8B /* ModelDTO */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C8090C2B28E9A800E99C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C809192B28EA6B00E99C8B /* Components */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C8090D2B28E9AF00E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C8090E2B28E9B800E99C8B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		80C8090F2B28E9C300E99C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C8091A2B28EA7700E99C8B /* ModelDTO */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C809102B28E9E300E99C8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80C809182B28EA6100E99C8B /* Components */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80C809112B28E9EB00E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C809122B28E9F600E99C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80C809172B28EA5600E99C8B /* Components */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		80C809132B28E9FF00E99C8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		80C809142B28EA0900E99C8B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		80C809152B28EA2900E99C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80C809162B28EA4800E99C8B /* ModelDTO */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		80C809162B28EA4800E99C8B /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelDTO;
+			sourceTree = "<group>";
+		};
+		80C809172B28EA5600E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C809182B28EA6100E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C809192B28EA6B00E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C8091A2B28EA7700E99C8B /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelDTO;
+			sourceTree = "<group>";
+		};
+		80C8091B2B28EA8E00E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C8091C2B28EA9900E99C8B /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelDTO;
+			sourceTree = "<group>";
+		};
+		80C8091D2B28EAAB00E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C8091E2B28EAB600E99C8B /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelDTO;
+			sourceTree = "<group>";
+		};
+		80C8091F2B28EAC300E99C8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		80C809202B28EACD00E99C8B /* ModelDTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelDTO;
+			sourceTree = "<group>";
+		};
+		80C809222B28EAF800E99C8B /* HistoryAllSeasonsTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HistoryAllSeasonsTest;
+			sourceTree = "<group>";
+		};
+		80C809232B28EB2000E99C8B /* CurrentConstructorsTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CurrentConstructorsTest;
+			sourceTree = "<group>";
+		};
+		80C809242B28EB7C00E99C8B /* CurrentDriversTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CurrentDriversTest;
+			sourceTree = "<group>";
+		};
+		80C809252B28EB8F00E99C8B /* CurrentResultsTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CurrentResultsTest;
+			sourceTree = "<group>";
+		};
+		80C809262B28EBA000E99C8B /* CurrentNextRacesTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CurrentNextRacesTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C808CA2B28DFAE00E99C8B /* ContentView.swift in Sources */,
+				80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */,
 				80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
