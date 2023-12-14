@@ -12,13 +12,30 @@ let mainURL = URL(string: "https://ergast.com/api/f1")!
 extension URL {
 //    MARK: Current Season
     static let getCurrentRaceTableURL = mainURL.appending(path: "current.json")
+    static let getCurrentAllResultsURL = mainURL.appending(path: "current/results.json")
+    static let getCurrentDriverInfoURL = mainURL.appending(path: "current/drivers.json")
+    static let getCurrentDriverLastStdURL = mainURL.appending(path: "current/driverStandings.json")
+    static let getCurrentConstructorsInfoURL = mainURL.appending(path: "current/constructors.json")
+    static let getCurrentConstructorLastStdURL = mainURL.appending(path: "current/constructorStandings.json")
     
+    //    MARK: List of all the seasons
+    static let getAllSeasonTableURL = mainURL.appending(path: "seasons.json")
     
-    static func flagURL(flagName: String) -> URL {
-        return URL(string: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/\(flagName)-flag.png.transform/2col/image.png")!
+    //    MARK: List of the circuits of each for each season
+    static func getAllCircuitsInSeasonURL(season: String) -> URL {
+        mainURL.appending(path: "\(season)/circuits.json")
     }
     
-    static func circuitURL(circuitName: String) -> URL {
-        return URL(string: "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/\(circuitName)_Circuit.png.transform/7col/image.png")!
+    //    MARK: List of builders for each season
+    static func getAllConstructorsInSeasonURL(year: String) -> URL {
+        mainURL.appending(path: "\(year)/constructors.json")
+    }
+    //    MARK: List of drivers for each season
+    static func getAllDriversInSeasonURL(year: String) -> URL {
+        mainURL.appending(path: "\(year)/drivers.json")
+    }
+    //    MARK: List of drivers champions for each season
+    static func getDriverStandingInSeasonURL(driverID: String) -> URL {
+        mainURL.appending(path: "drivers/\(driverID)/driverStandings.json")
     }
 }

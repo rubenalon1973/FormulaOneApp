@@ -16,8 +16,7 @@ struct NextRaceCell: View {
                            size: .small,
                            circuitFormat: .circuitAndText)
         .padding()
-        .background(RoundedRectangle(cornerRadius: 10)
-            .fill(.gray.opacity(0.3)).shadow(radius: 5))
+        .background(RoundedRectangle(cornerRadius: 10).fill(.gray.opacity(0.3)).shadow(radius: 5))
         .padding(10)
     }
 }

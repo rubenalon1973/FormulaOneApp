@@ -43,26 +43,20 @@ struct CurrentCircuitCell: View {
                                 .bold()
                         }
                     }
-                    AsyncImage(url: .circuitURL(circuitName: race.formattedCountryNameImage)) { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: size.rawValue)
-                    } placeholder: {
-                        ProgressView()
-                    }
+                    Image("img_" + race.circuit.circuitID)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.rawValue)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3), lineWidth: 2))
                     Text("\(race.round) - \(race.formattedCountryName)")
                         .bold()
                     HStack {
-                        AsyncImage(url: .flagURL(flagName: race.flagName)) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 80)
-                                .padding()
-                        } placeholder: {
-                            ProgressView()
-                        }
+                        Image(race.circuit.location.locality)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50)
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
                         Text(race.raceName)
                             .font(.title2)
                             .bold()
@@ -70,15 +64,12 @@ struct CurrentCircuitCell: View {
                 }
             case .circuitRaceDetail:
                 VStack {
-                    AsyncImage(url: .circuitURL(
-                        circuitName: race.formattedCountryNameImage)) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: size.rawValue)
-                        } placeholder: {
-                            ProgressView()
-                        }
+                    Image("img_" + race.circuit.circuitID.lowercased())
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: size.rawValue)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3), lineWidth: 2))
                     Text("\(race.round) - \(race.formattedCountryName)")
                         .font(.title3)
                         .bold()

@@ -13,18 +13,11 @@ struct CurrentSeasonCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                AsyncImage(url: .flagURL(flagName: race.flagName)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50)
-                    
-                } placeholder: {
-                    Image(systemName: "flag.slash")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40)
-                }
+                Image(race.circuit.location.locality)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                 Text(race.raceName)
                     .font(.subheadline)
                     .bold()
