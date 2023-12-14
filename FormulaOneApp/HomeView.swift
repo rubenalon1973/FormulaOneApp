@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var currentRaceVM = CurrentRaceTableVM()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            TabView {
+                Group {
+                    NextRacesView(currentVM: currentRaceVM)
+                        .tabItem {
+                            Label("Next races", systemImage: "flag.checkered.2.crossed")
+                        }
+                }
+                .toolbarBackground(.thinMaterial, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+            }
+            .tint(Color.blue)
         }
-        .padding()
     }
 }
 
