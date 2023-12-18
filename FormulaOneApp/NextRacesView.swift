@@ -14,7 +14,7 @@ struct NextRacesView: View {
         NavigationView {
             ScrollView {
                 LazyVStack {
-                    ForEach(Array(currentVM.orderedRaces.enumerated()), id: \.element) { index, race in
+                    ForEach(Array(currentVM.races.enumerated()), id: \.element) { index, race in
                         if index == 0 {
                             VStack {
                                 NavigationLink {

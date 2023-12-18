@@ -7,6 +7,8 @@
 
 import Foundation
 
+import Foundation
+
 // MARK: - CurrentSeason
 struct CurrentSeasonDTO: Codable {
     let mrDataCurrent: MRDataCurrentDTO

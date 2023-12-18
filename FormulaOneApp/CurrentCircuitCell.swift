@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum CircuitSize: CGFloat {
-    case small = 300
+    case small = 340
     case big = 380
 }
 
@@ -75,8 +75,6 @@ struct CurrentCircuitCell: View {
                         .bold()
                         .padding()
                 }
-                .background(RoundedRectangle(cornerRadius: 10)
-                    .fill(.gray.opacity(0.3)).shadow(radius: 5))
                 .padding(10)
         }
     }

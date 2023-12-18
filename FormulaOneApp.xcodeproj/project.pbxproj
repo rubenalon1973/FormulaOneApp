@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808EE58A2B310E810026C9E4 /* CurrentSeasonDemoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 808EE5892B310E810026C9E4 /* CurrentSeasonDemoData.json */; };
 		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
 		80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* HomeView.swift */; };
 		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		808EE5892B310E810026C9E4 /* CurrentSeasonDemoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentSeasonDemoData.json; sourceTree = "<group>"; };
 		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
 		80C808C92B28DFAE00E99C8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		80C808FB2B28E8BD00E99C8B /* CurrentNextRaces */ = {
 			isa = PBXGroup;
 			children = (
+				808EE5892B310E810026C9E4 /* CurrentSeasonDemoData.json */,
 				80C809032B28E94900E99C8B /* Models */,
 				80C809022B28E93F00E99C8B /* Repository */,
 				80C809012B28E93400E99C8B /* ViewModel */,
@@ -563,8 +566,8 @@
 				80C8093F2B28FB6000E99C8B /* NextRaceCell.swift */,
 				80C809452B28FC0B00E99C8B /* CurrentSeasonCell.swift */,
 				80C809472B28FC7F00E99C8B /* CurrentCircuitCell.swift */,
-				80C809492B28FCA500E99C8B /* WeekendScheduleSmallCell.swift */,
 				80C8094B2B28FCD100E99C8B /* WeekendScheduleBigCell.swift */,
+				80C809492B28FCA500E99C8B /* WeekendScheduleSmallCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -608,8 +611,8 @@
 		80C809262B28EBA000E99C8B /* CurrentNextRacesTest */ = {
 			isa = PBXGroup;
 			children = (
-				80C809432B28FBBD00E99C8B /* CurrentSeasonRepoTest.swift */,
 				80C809412B28FB9400E99C8B /* CurrentSeasonTest.json */,
+				80C809432B28FBBD00E99C8B /* CurrentSeasonRepoTest.swift */,
 			);
 			name = CurrentNextRacesTest;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C809522B29019F00E99C8B /* Asseets.xcassets in Resources */,
+				808EE58A2B310E810026C9E4 /* CurrentSeasonDemoData.json in Resources */,
 				80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */,
 				80C809422B28FB9400E99C8B /* CurrentSeasonTest.json in Resources */,
 			);

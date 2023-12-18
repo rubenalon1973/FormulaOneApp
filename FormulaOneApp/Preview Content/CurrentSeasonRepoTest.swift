@@ -18,6 +18,16 @@ final class CurrentSeasonRepoTest: CurrentRaceTableRepositoryProtocol {
         return try decoder.decode(CurrentSeasonDTO.self,
                                   from: data).mrDataCurrent.raceTable.races.map { $0.mapToModel() }
     }
+    
+    func getDemoRaceTable() async throws -> [CurrentRace] {
+        let urlDemoRaceTable = Bundle.main.url(forResource: "CurrentSeasonDemoData", withExtension: "json")!
+        
+        let data = try Data(contentsOf: urlDemoRaceTable)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(.longDateFormat)
+        
+        return try decoder.decode(CurrentSeasonDTO.self, from: data).mrDataCurrent.raceTable.races.map { $0.mapToModel() }
+    }
 }
 
 extension CurrentRaceTableVM {

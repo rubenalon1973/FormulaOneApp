@@ -34,6 +34,18 @@ struct CurrentRace: Identifiable, Hashable {
         return time.replacingOccurrences(of: ":00Z", with: " ")
     }
     
+    //    var flagName: String {
+    //        if circuit.location.country == "USA" {
+    //            return "united-states"
+    //        } else if circuit.location.country == "UAE" {
+    //            return "abu-dhabi"
+    //        } else if circuit.location.country == "UK" {
+    //            return "great-britain"
+    //        } else {
+    //            return circuit.location.country.replacingOccurrences(of: " ", with: "-").lowercased()
+    //        }
+    //    }
+    
     var formattedCountryName: String {
         if circuit.location.country == "UAE" {
             return "Abu Dhabi"
@@ -51,6 +63,24 @@ struct CurrentRace: Identifiable, Hashable {
             return circuit.location.country.replacingOccurrences(of: "_", with: " ")
         }
     }
+    
+    //    var formattedCountryNameImage: String {
+    //        if circuit.location.country == "UAE" {
+    //            return "Abu_Dhabi"
+    //        } else if circuit.location.country == "UK" {
+    //            return "Great_Britain"
+    //        } else if circuit.location.country == "Azerbaijan" {
+    //            return "Baku"
+    //        } else if circuit.location.country == "USA" {
+    //            return "Miami"
+    //        } else if circuit.location.country == "Monaco" {
+    //            return "Monoco"
+    //        } else if circuit.location.country == "United States" {
+    //            return "Las_Vegas"
+    //        } else {
+    //            return circuit.location.country.replacingOccurrences(of: " ", with: "_")
+    //        }
+    //    }
 }
 
 struct CurrentCircuit: Hashable {

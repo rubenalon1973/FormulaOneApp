@@ -25,10 +25,11 @@ final class CurrentRaceTableVM: ObservableObject {
         }
     }
     
+    //    MARK: Para tirar de JSON local si la API no responde
     @MainActor
     func fetchCurrentRaceTable() async {
         do {
-            self.races = try await repository.getRaceTable()
+            self.races = try await repository.getDemoRaceTable()
         } catch let error as NetworkErrors {
             errorMessage = error.localizedDescription
             races = []
@@ -36,4 +37,16 @@ final class CurrentRaceTableVM: ObservableObject {
             races = []
         }
     }
+    //    MARK: Para tirar de API
+//    @MainActor
+//    func fetchCurrentRaceTable() async {
+//        do {
+//            self.races = try await repository.getRaceTable()
+//        } catch let error as NetworkErrors {
+//            errorMessage = error.localizedDescription
+//            races = []
+//        } catch {
+//            races = []
+//        }
+//    }
 }

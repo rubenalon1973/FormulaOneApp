@@ -11,9 +11,9 @@ func getJSON<JSON: Codable>(url: URL, type: JSON.Type) async throws -> JSON {
     let (data, response) = try await URLSession.shared.data(from: url)
     let decoder = JSONDecoder()
     
-    decoder.dateDecodingStrategy = .formatted(.longDateFormat)//pasa al modelo los datos a tipo Date
+    decoder.dateDecodingStrategy = .formatted(.longDateFormat)
     guard let httpResponse = response as? HTTPURLResponse else { throw NetworkErrors.general }
-
+    
     switch httpResponse.statusCode {
         case 200...299:
             do {

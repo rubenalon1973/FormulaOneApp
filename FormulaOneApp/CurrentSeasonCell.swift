@@ -11,39 +11,44 @@ struct CurrentSeasonCell: View {
     let race: CurrentRace
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 10) {
                 Image(race.circuit.location.locality)
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 50)
+                    .frame(width: 70, height: 50)
                     .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3), lineWidth: 2))
+                    .padding(.trailing, 5)
+                
                 Text(race.raceName)
-                    .font(.subheadline)
+                    .font(.title3)
                     .bold()
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
+                
+                Spacer()
+                
                 if race.sprint != nil {
                     Text("SPRINT")
-                        .padding(3)
                         .background(.yellow)
                         .foregroundStyle(.black)
                         .font(.caption2)
                         .bold()
                 }
             }
-            HStack {
+            
+            HStack(spacing: 10) {
                 Text("\(race.round) - \(race.formattedCountryName)")
-                    .padding(.trailing, 30)
+                Spacer()
                 Text(race.formattedDate)
-                    .bold()
                 Text(race.formattedTime)
-                    .bold()
             }
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .center)
         .background(RoundedRectangle(cornerRadius: 10)
             .fill(.gray.opacity(0.3)).shadow(radius: 5))
-        .padding(10)
+        .padding(.horizontal, 10)
     }
 }
 
