@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		808EE58A2B310E810026C9E4 /* CurrentSeasonDemoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 808EE5892B310E810026C9E4 /* CurrentSeasonDemoData.json */; };
+		80A200912B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200902B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift */; };
+		80A200932B37790A004B3F82 /* CurrentResultsRaceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200922B37790A004B3F82 /* CurrentResultsRaceTable.swift */; };
+		80A200952B377AD7004B3F82 /* RaceResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200942B377AD7004B3F82 /* RaceResultsRepository.swift */; };
+		80A200972B377AF4004B3F82 /* RaceResultsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200962B377AF4004B3F82 /* RaceResultsVM.swift */; };
+		80A200992B377B15004B3F82 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200982B377B15004B3F82 /* RaceCell.swift */; };
+		80A2009B2B377B3F004B3F82 /* DriverResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2009A2B377B3F004B3F82 /* DriverResultCell.swift */; };
+		80A2009D2B377B5D004B3F82 /* RoundCircuitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2009C2B377B5D004B3F82 /* RoundCircuitCell.swift */; };
+		80A2009F2B377BAD004B3F82 /* RacesResultsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 80A2009E2B377BAD004B3F82 /* RacesResultsTest.json */; };
+		80A200A12B377BD0004B3F82 /* RacesResultsRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A02B377BD0004B3F82 /* RacesResultsRepoTest.swift */; };
+		80A200A32B377C1B004B3F82 /* RaceResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A22B377C1B004B3F82 /* RaceResultView.swift */; };
+		80A200A52B377C43004B3F82 /* RaceResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A42B377C43004B3F82 /* RaceResultDetailView.swift */; };
 		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
 		80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* HomeView.swift */; };
 		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
@@ -57,6 +68,17 @@
 
 /* Begin PBXFileReference section */
 		808EE5892B310E810026C9E4 /* CurrentSeasonDemoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentSeasonDemoData.json; sourceTree = "<group>"; };
+		80A200902B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentResultsRaceTableDTO.swift; sourceTree = "<group>"; };
+		80A200922B37790A004B3F82 /* CurrentResultsRaceTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentResultsRaceTable.swift; sourceTree = "<group>"; };
+		80A200942B377AD7004B3F82 /* RaceResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultsRepository.swift; sourceTree = "<group>"; };
+		80A200962B377AF4004B3F82 /* RaceResultsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultsVM.swift; sourceTree = "<group>"; };
+		80A200982B377B15004B3F82 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
+		80A2009A2B377B3F004B3F82 /* DriverResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverResultCell.swift; sourceTree = "<group>"; };
+		80A2009C2B377B5D004B3F82 /* RoundCircuitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCircuitCell.swift; sourceTree = "<group>"; };
+		80A2009E2B377BAD004B3F82 /* RacesResultsTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RacesResultsTest.json; sourceTree = "<group>"; };
+		80A200A02B377BD0004B3F82 /* RacesResultsRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesResultsRepoTest.swift; sourceTree = "<group>"; };
+		80A200A22B377C1B004B3F82 /* RaceResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultView.swift; sourceTree = "<group>"; };
+		80A200A42B377C43004B3F82 /* RaceResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultDetailView.swift; sourceTree = "<group>"; };
 		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
 		80C808C92B28DFAE00E99C8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -365,6 +387,8 @@
 		80C809042B28E95400E99C8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80A200A22B377C1B004B3F82 /* RaceResultView.swift */,
+				80A200A42B377C43004B3F82 /* RaceResultDetailView.swift */,
 				80C8091D2B28EAAB00E99C8B /* Components */,
 			);
 			name = Views;
@@ -373,6 +397,7 @@
 		80C809052B28E95C00E99C8B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				80A200962B377AF4004B3F82 /* RaceResultsVM.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -380,6 +405,7 @@
 		80C809062B28E96600E99C8B /* Repositoty */ = {
 			isa = PBXGroup;
 			children = (
+				80A200942B377AD7004B3F82 /* RaceResultsRepository.swift */,
 			);
 			name = Repositoty;
 			sourceTree = "<group>";
@@ -388,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				80C8091E2B28EAB600E99C8B /* ModelDTO */,
+				80A200922B37790A004B3F82 /* CurrentResultsRaceTable.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -549,6 +576,9 @@
 		80C8091D2B28EAAB00E99C8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				80A200982B377B15004B3F82 /* RaceCell.swift */,
+				80A2009A2B377B3F004B3F82 /* DriverResultCell.swift */,
+				80A2009C2B377B5D004B3F82 /* RoundCircuitCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -556,6 +586,7 @@
 		80C8091E2B28EAB600E99C8B /* ModelDTO */ = {
 			isa = PBXGroup;
 			children = (
+				80A200902B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift */,
 			);
 			name = ModelDTO;
 			sourceTree = "<group>";
@@ -604,6 +635,8 @@
 		80C809252B28EB8F00E99C8B /* CurrentResultsTest */ = {
 			isa = PBXGroup;
 			children = (
+				80A2009E2B377BAD004B3F82 /* RacesResultsTest.json */,
+				80A200A02B377BD0004B3F82 /* RacesResultsRepoTest.swift */,
 			);
 			name = CurrentResultsTest;
 			sourceTree = "<group>";
@@ -724,6 +757,7 @@
 				80C809522B29019F00E99C8B /* Asseets.xcassets in Resources */,
 				808EE58A2B310E810026C9E4 /* CurrentSeasonDemoData.json in Resources */,
 				80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */,
+				80A2009F2B377BAD004B3F82 /* RacesResultsTest.json in Resources */,
 				80C809422B28FB9400E99C8B /* CurrentSeasonTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,11 +786,15 @@
 				80C8092C2B28F41600E99C8B /* NWInterface.swift in Sources */,
 				80C809302B28F4C400E99C8B /* URLSessionExt.swift in Sources */,
 				80C809282B28F3AA00E99C8B /* CurrentSeasonDTO.swift in Sources */,
+				80A200952B377AD7004B3F82 /* RaceResultsRepository.swift in Sources */,
 				80C809342B28F55900E99C8B /* JSONDecoder.swift in Sources */,
+				80A200992B377B15004B3F82 /* RaceCell.swift in Sources */,
 				80C8093A2B28F6F700E99C8B /* PagerView.swift in Sources */,
 				80C809322B28F52D00E99C8B /* URLRequestExt.swift in Sources */,
 				80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */,
 				80C809362B28F5D500E99C8B /* PageModel.swift in Sources */,
+				80A2009D2B377B5D004B3F82 /* RoundCircuitCell.swift in Sources */,
+				80A200932B37790A004B3F82 /* CurrentResultsRaceTable.swift in Sources */,
 				80C8094E2B28FCF400E99C8B /* NextRacesView.swift in Sources */,
 				80C809442B28FBBD00E99C8B /* CurrentSeasonRepoTest.swift in Sources */,
 				80C8093E2B28FB3400E99C8B /* CurrentRaceTableVM.swift in Sources */,
@@ -766,9 +804,15 @@
 				80C809482B28FC7F00E99C8B /* CurrentCircuitCell.swift in Sources */,
 				80C8094A2B28FCA500E99C8B /* WeekendScheduleSmallCell.swift in Sources */,
 				80C809462B28FC0B00E99C8B /* CurrentSeasonCell.swift in Sources */,
+				80A2009B2B377B3F004B3F82 /* DriverResultCell.swift in Sources */,
 				80C8092E2B28F49F00E99C8B /* DateFormattedExt.swift in Sources */,
+				80A200912B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift in Sources */,
 				80C8094C2B28FCD100E99C8B /* WeekendScheduleBigCell.swift in Sources */,
+				80A200972B377AF4004B3F82 /* RaceResultsVM.swift in Sources */,
 				80C809502B28FD1800E99C8B /* NextRaceDetailView.swift in Sources */,
+				80A200A32B377C1B004B3F82 /* RaceResultView.swift in Sources */,
+				80A200A12B377BD0004B3F82 /* RacesResultsRepoTest.swift in Sources */,
+				80A200A52B377C43004B3F82 /* RaceResultDetailView.swift in Sources */,
 				80C8092A2B28F3D300E99C8B /* CurrentRaceTable.swift in Sources */,
 				80C809402B28FB6000E99C8B /* NextRaceCell.swift in Sources */,
 			);

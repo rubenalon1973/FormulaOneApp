@@ -11,7 +11,6 @@ struct NextRacesView: View {
     @ObservedObject var currentVM: CurrentRaceTableVM
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 LazyVStack {
                     ForEach(Array(currentVM.races.enumerated()), id: \.element) { index, race in
@@ -34,11 +33,13 @@ struct NextRacesView: View {
                         }
                     }
                 }
-                .navigationBarTitle("Next races")
-                .toolbarBackground(.thinMaterial, for: .navigationBar)
             }
+            .navigationBarTitle("Next races")
+            .navigationDestination(for: CurrentRace.self, destination: { race in
+                NextRaceDetailView(race: race)
+            })
+            .toolbarBackground(.thinMaterial, for: .navigationBar)
             .foregroundStyle(.primary)
-        }
     }
 }
 

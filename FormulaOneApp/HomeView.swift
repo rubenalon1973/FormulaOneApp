@@ -7,21 +7,60 @@
 
 import SwiftUI
 
+enum Tab: Int {
+    case nextRaces = 1
+    case results = 2
+    case drivers = 3
+    case teams = 4
+    case history = 5
+    case settings = 6
+    
+    var title: String {
+        switch self {
+            case .nextRaces:
+                return "Next races"
+            case .results:
+                return "Results"
+            case .drivers:
+                return "Drivers"
+            case .teams:
+                return "Teams"
+            case .history:
+                return "History"
+            case .settings:
+                return "Settings"
+        }
+    }
+}
+
 struct HomeView: View {
+    @State var selection = Tab.nextRaces
     @ObservedObject var currentRaceVM = CurrentRaceTableVM()
+    @ObservedObject var raceResultVM = RaceResultsVM()
     
     var body: some View {
         NavigationStack {
-            TabView {
-                Group {
-                    NextRacesView(currentVM: currentRaceVM)
-                        .tabItem {
-                            Label("Next races", systemImage: "flag.checkered.2.crossed")
+            TabView(selection: $selection) {
+                NextRacesView(currentVM: currentRaceVM)
+                    .tabItem {
+                        VStack {
+                            Text("Next races")
+                            Image(systemName: "flag.checkered.2.crossed")
                         }
-                }
-                .toolbarBackground(.thinMaterial, for: .tabBar)
-                .toolbarBackground(.visible, for: .tabBar)
+                        .tag(Tab.nextRaces)
+                    }
+                RaceResultView(raceVM: raceResultVM)
+                    .tabItem {
+                        VStack {
+                            Text("Results")
+                            Image(systemName: "list.bullet.clipboard")
+                        }
+                    }
+                    .tag(Tab.results)
             }
+            .navigationTitle(selection.title)
+            .toolbarBackground(.thinMaterial, for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
             .tint(Color.blue)
         }
     }
