@@ -19,6 +19,22 @@
 		80A200A12B377BD0004B3F82 /* RacesResultsRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A02B377BD0004B3F82 /* RacesResultsRepoTest.swift */; };
 		80A200A32B377C1B004B3F82 /* RaceResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A22B377C1B004B3F82 /* RaceResultView.swift */; };
 		80A200A52B377C43004B3F82 /* RaceResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A42B377C43004B3F82 /* RaceResultDetailView.swift */; };
+		80A200A92B3780C5004B3F82 /* CurrentDriverInformationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200A82B3780C4004B3F82 /* CurrentDriverInformationDTO.swift */; };
+		80A200AB2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200AA2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift */; };
+		80A200AD2B3780FF004B3F82 /* CurrentDriverInfoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200AC2B3780FF004B3F82 /* CurrentDriverInfoTable.swift */; };
+		80A200AF2B378122004B3F82 /* DriverLastStandingsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200AE2B378122004B3F82 /* DriverLastStandingsTable.swift */; };
+		80A200B12B378163004B3F82 /* CurrentDriverInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200B02B378163004B3F82 /* CurrentDriverInfoRepository.swift */; };
+		80A200B32B378192004B3F82 /* CurrentDriverInfoTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 80A200B22B378192004B3F82 /* CurrentDriverInfoTest.json */; };
+		80A200B52B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200B42B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift */; };
+		80A200B72B3781D9004B3F82 /* CurrentDriverInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200B62B3781D9004B3F82 /* CurrentDriverInfoVM.swift */; };
+		80A200B92B3782C6004B3F82 /* DriverLastStdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200B82B3782C6004B3F82 /* DriverLastStdRepository.swift */; };
+		80A200BB2B378302004B3F82 /* DriverInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200BA2B378302004B3F82 /* DriverInfoCell.swift */; };
+		80A200BD2B378326004B3F82 /* DriversImageGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200BC2B378326004B3F82 /* DriversImageGridCell.swift */; };
+		80A200BF2B378357004B3F82 /* DriverInfoImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200BE2B378357004B3F82 /* DriverInfoImageCell.swift */; };
+		80A200C12B37837A004B3F82 /* DriverInfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200C02B37837A004B3F82 /* DriverInfoDetailCell.swift */; };
+		80A200C32B378395004B3F82 /* DriverLastStdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200C22B378395004B3F82 /* DriverLastStdCell.swift */; };
+		80A200C52B3783BA004B3F82 /* DriverInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200C42B3783BA004B3F82 /* DriverInfoDetailView.swift */; };
+		80A200C72B3783D4004B3F82 /* DriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200C62B3783D4004B3F82 /* DriverInfoView.swift */; };
 		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
 		80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* HomeView.swift */; };
 		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
@@ -79,6 +95,22 @@
 		80A200A02B377BD0004B3F82 /* RacesResultsRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesResultsRepoTest.swift; sourceTree = "<group>"; };
 		80A200A22B377C1B004B3F82 /* RaceResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultView.swift; sourceTree = "<group>"; };
 		80A200A42B377C43004B3F82 /* RaceResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResultDetailView.swift; sourceTree = "<group>"; };
+		80A200A82B3780C4004B3F82 /* CurrentDriverInformationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverInformationDTO.swift; sourceTree = "<group>"; };
+		80A200AA2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverLastStandingsDTO.swift; sourceTree = "<group>"; };
+		80A200AC2B3780FF004B3F82 /* CurrentDriverInfoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverInfoTable.swift; sourceTree = "<group>"; };
+		80A200AE2B378122004B3F82 /* DriverLastStandingsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLastStandingsTable.swift; sourceTree = "<group>"; };
+		80A200B02B378163004B3F82 /* CurrentDriverInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverInfoRepository.swift; sourceTree = "<group>"; };
+		80A200B22B378192004B3F82 /* CurrentDriverInfoTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentDriverInfoTest.json; sourceTree = "<group>"; };
+		80A200B42B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverInfoRepoTest.swift; sourceTree = "<group>"; };
+		80A200B62B3781D9004B3F82 /* CurrentDriverInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDriverInfoVM.swift; sourceTree = "<group>"; };
+		80A200B82B3782C6004B3F82 /* DriverLastStdRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLastStdRepository.swift; sourceTree = "<group>"; };
+		80A200BA2B378302004B3F82 /* DriverInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoCell.swift; sourceTree = "<group>"; };
+		80A200BC2B378326004B3F82 /* DriversImageGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversImageGridCell.swift; sourceTree = "<group>"; };
+		80A200BE2B378357004B3F82 /* DriverInfoImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoImageCell.swift; sourceTree = "<group>"; };
+		80A200C02B37837A004B3F82 /* DriverInfoDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoDetailCell.swift; sourceTree = "<group>"; };
+		80A200C22B378395004B3F82 /* DriverLastStdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLastStdCell.swift; sourceTree = "<group>"; };
+		80A200C42B3783BA004B3F82 /* DriverInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoDetailView.swift; sourceTree = "<group>"; };
+		80A200C62B3783D4004B3F82 /* DriverInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoView.swift; sourceTree = "<group>"; };
 		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
 		80C808C92B28DFAE00E99C8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -422,6 +454,8 @@
 		80C809082B28E98400E99C8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80A200C62B3783D4004B3F82 /* DriverInfoView.swift */,
+				80A200C42B3783BA004B3F82 /* DriverInfoDetailView.swift */,
 				80C8091B2B28EA8E00E99C8B /* Components */,
 			);
 			name = Views;
@@ -430,6 +464,7 @@
 		80C809092B28E98B00E99C8B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				80A200B62B3781D9004B3F82 /* CurrentDriverInfoVM.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -437,6 +472,8 @@
 		80C8090A2B28E99400E99C8B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				80A200B02B378163004B3F82 /* CurrentDriverInfoRepository.swift */,
+				80A200B82B3782C6004B3F82 /* DriverLastStdRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -444,6 +481,8 @@
 		80C8090B2B28E99E00E99C8B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				80A200AC2B3780FF004B3F82 /* CurrentDriverInfoTable.swift */,
+				80A200AE2B378122004B3F82 /* DriverLastStandingsTable.swift */,
 				80C8091C2B28EA9900E99C8B /* ModelDTO */,
 			);
 			name = Models;
@@ -562,6 +601,11 @@
 		80C8091B2B28EA8E00E99C8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				80A200BA2B378302004B3F82 /* DriverInfoCell.swift */,
+				80A200BC2B378326004B3F82 /* DriversImageGridCell.swift */,
+				80A200BE2B378357004B3F82 /* DriverInfoImageCell.swift */,
+				80A200C02B37837A004B3F82 /* DriverInfoDetailCell.swift */,
+				80A200C22B378395004B3F82 /* DriverLastStdCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -569,6 +613,8 @@
 		80C8091C2B28EA9900E99C8B /* ModelDTO */ = {
 			isa = PBXGroup;
 			children = (
+				80A200A82B3780C4004B3F82 /* CurrentDriverInformationDTO.swift */,
+				80A200AA2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift */,
 			);
 			name = ModelDTO;
 			sourceTree = "<group>";
@@ -628,6 +674,8 @@
 		80C809242B28EB7C00E99C8B /* CurrentDriversTest */ = {
 			isa = PBXGroup;
 			children = (
+				80A200B22B378192004B3F82 /* CurrentDriverInfoTest.json */,
+				80A200B42B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift */,
 			);
 			name = CurrentDriversTest;
 			sourceTree = "<group>";
@@ -755,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C809522B29019F00E99C8B /* Asseets.xcassets in Resources */,
+				80A200B32B378192004B3F82 /* CurrentDriverInfoTest.json in Resources */,
 				808EE58A2B310E810026C9E4 /* CurrentSeasonDemoData.json in Resources */,
 				80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */,
 				80A2009F2B377BAD004B3F82 /* RacesResultsTest.json in Resources */,
@@ -783,12 +832,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A200B12B378163004B3F82 /* CurrentDriverInfoRepository.swift in Sources */,
 				80C8092C2B28F41600E99C8B /* NWInterface.swift in Sources */,
+				80A200BB2B378302004B3F82 /* DriverInfoCell.swift in Sources */,
 				80C809302B28F4C400E99C8B /* URLSessionExt.swift in Sources */,
 				80C809282B28F3AA00E99C8B /* CurrentSeasonDTO.swift in Sources */,
 				80A200952B377AD7004B3F82 /* RaceResultsRepository.swift in Sources */,
 				80C809342B28F55900E99C8B /* JSONDecoder.swift in Sources */,
 				80A200992B377B15004B3F82 /* RaceCell.swift in Sources */,
+				80A200B52B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift in Sources */,
 				80C8093A2B28F6F700E99C8B /* PagerView.swift in Sources */,
 				80C809322B28F52D00E99C8B /* URLRequestExt.swift in Sources */,
 				80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */,
@@ -797,21 +849,33 @@
 				80A200932B37790A004B3F82 /* CurrentResultsRaceTable.swift in Sources */,
 				80C8094E2B28FCF400E99C8B /* NextRacesView.swift in Sources */,
 				80C809442B28FBBD00E99C8B /* CurrentSeasonRepoTest.swift in Sources */,
+				80A200BD2B378326004B3F82 /* DriversImageGridCell.swift in Sources */,
 				80C8093E2B28FB3400E99C8B /* CurrentRaceTableVM.swift in Sources */,
+				80A200A92B3780C5004B3F82 /* CurrentDriverInformationDTO.swift in Sources */,
 				80C8093C2B28FB1700E99C8B /* CurrentRaceTableRepository.swift in Sources */,
 				80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */,
 				80C809382B28F6CE00E99C8B /* PageView.swift in Sources */,
+				80A200BF2B378357004B3F82 /* DriverInfoImageCell.swift in Sources */,
 				80C809482B28FC7F00E99C8B /* CurrentCircuitCell.swift in Sources */,
+				80A200B72B3781D9004B3F82 /* CurrentDriverInfoVM.swift in Sources */,
 				80C8094A2B28FCA500E99C8B /* WeekendScheduleSmallCell.swift in Sources */,
 				80C809462B28FC0B00E99C8B /* CurrentSeasonCell.swift in Sources */,
+				80A200C72B3783D4004B3F82 /* DriverInfoView.swift in Sources */,
 				80A2009B2B377B3F004B3F82 /* DriverResultCell.swift in Sources */,
 				80C8092E2B28F49F00E99C8B /* DateFormattedExt.swift in Sources */,
 				80A200912B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift in Sources */,
+				80A200AB2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift in Sources */,
 				80C8094C2B28FCD100E99C8B /* WeekendScheduleBigCell.swift in Sources */,
 				80A200972B377AF4004B3F82 /* RaceResultsVM.swift in Sources */,
 				80C809502B28FD1800E99C8B /* NextRaceDetailView.swift in Sources */,
+				80A200AD2B3780FF004B3F82 /* CurrentDriverInfoTable.swift in Sources */,
+				80A200C12B37837A004B3F82 /* DriverInfoDetailCell.swift in Sources */,
+				80A200C32B378395004B3F82 /* DriverLastStdCell.swift in Sources */,
 				80A200A32B377C1B004B3F82 /* RaceResultView.swift in Sources */,
 				80A200A12B377BD0004B3F82 /* RacesResultsRepoTest.swift in Sources */,
+				80A200B92B3782C6004B3F82 /* DriverLastStdRepository.swift in Sources */,
+				80A200C52B3783BA004B3F82 /* DriverInfoDetailView.swift in Sources */,
+				80A200AF2B378122004B3F82 /* DriverLastStandingsTable.swift in Sources */,
 				80A200A52B377C43004B3F82 /* RaceResultDetailView.swift in Sources */,
 				80C8092A2B28F3D300E99C8B /* CurrentRaceTable.swift in Sources */,
 				80C809402B28FB6000E99C8B /* NextRaceCell.swift in Sources */,

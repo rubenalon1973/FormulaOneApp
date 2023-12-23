@@ -37,6 +37,7 @@ struct HomeView: View {
     @State var selection = Tab.nextRaces
     @ObservedObject var currentRaceVM = CurrentRaceTableVM()
     @ObservedObject var raceResultVM = RaceResultsVM()
+    @ObservedObject var currentDriverVM = CurrentDriverInfoVM()
     
     var body: some View {
         NavigationStack {
@@ -57,6 +58,14 @@ struct HomeView: View {
                         }
                     }
                     .tag(Tab.results)
+                DriverInfoView(driverVM: currentDriverVM)
+                    .tabItem {
+                        VStack {
+                            Text("Drivers")
+                            Image(systemName: "person.fill")
+                        }
+                    }
+                    .tag(Tab.drivers)
             }
             .navigationTitle(selection.title)
             .toolbarBackground(.thinMaterial, for: .tabBar)
