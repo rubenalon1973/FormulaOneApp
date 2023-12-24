@@ -38,6 +38,7 @@ struct HomeView: View {
     @ObservedObject var currentRaceVM = CurrentRaceTableVM()
     @ObservedObject var raceResultVM = RaceResultsVM()
     @ObservedObject var currentDriverVM = CurrentDriverInfoVM()
+    @ObservedObject var currentConstructorVM = CurrentConstructorInfoVM()
     
     var body: some View {
         NavigationStack {
@@ -66,6 +67,14 @@ struct HomeView: View {
                         }
                     }
                     .tag(Tab.drivers)
+                ConstructorInfoView(constructorVM: currentConstructorVM)
+                    .tabItem {
+                        VStack {
+                            Text("Teams")
+                            Image(systemName: "car.2")
+                        }
+                    }
+                    .tag(Tab.teams)
             }
             .navigationTitle(selection.title)
             .toolbarBackground(.thinMaterial, for: .tabBar)
