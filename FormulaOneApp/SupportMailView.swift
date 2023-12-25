@@ -1,8 +1,8 @@
 //
 //  SupportMailView.swift
-//  MyAppF1_Proyect
+//  FormulaOneApp
 //
-//  Created by Ruben Alonso on 24/11/23.
+//  Created by Ruben Alonso on 25/12/23.
 //
 
 import SwiftUI
@@ -11,10 +11,12 @@ struct SupportMailView: View {
     @ObservedObject var settingsVM: SettingsVM
     
     var body: some View {
-        Image(.incidencia)
-            .resizable()
-            .scaledToFill()
-            .ignoresSafeArea()
+        VStack {
+            Image(.incidencia)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+        }
             VStack(alignment: .leading, spacing: 10) {
                 Text("Experiencing an Issue?")
                     .font(.title)
@@ -28,7 +30,6 @@ struct SupportMailView: View {
                 }) {
                     Label("Send Support Email", systemImage: "square.and.pencil")
                         .labelStyle(TitleAndIconLabelStyle())
-                    
                 }
                 .font(.headline)
                 .foregroundColor(.white)

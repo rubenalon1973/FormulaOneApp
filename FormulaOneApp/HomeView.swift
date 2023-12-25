@@ -40,6 +40,7 @@ struct HomeView: View {
     @ObservedObject var currentDriverVM = CurrentDriverInfoVM()
     @ObservedObject var settingsVM = SettingsVM()
     @ObservedObject var currentConstructorVM = CurrentConstructorInfoVM()
+    @ObservedObject var allSeasonVM = AllSeasonTableVM()
     
     var body: some View {
         NavigationStack {
@@ -50,8 +51,8 @@ struct HomeView: View {
                             Text("Next races")
                             Image(systemName: "flag.checkered.2.crossed")
                         }
-                        .tag(Tab.nextRaces)
                     }
+                    .tag(Tab.nextRaces)
                 RaceResultView(raceVM: raceResultVM)
                     .tabItem {
                         VStack {
@@ -84,6 +85,14 @@ struct HomeView: View {
                         }
                     }
                     .tag(Tab.settings)
+                AllSeasonTableListView(allSeasonVM: allSeasonVM)
+                    .tabItem {
+                        VStack {
+                            Text("History")
+                            Image(systemName: "flag.filled.and.flag.crossed")
+                        }
+                    }
+                    .tag(Tab.history)
             }
             .navigationTitle(selection.title)
             .toolbarBackground(.thinMaterial, for: .tabBar)

@@ -38,7 +38,7 @@ struct NextRacesView: View {
             .navigationDestination(for: CurrentRace.self, destination: { race in
                 NextRaceDetailView(race: race)
             })
-            .toolbarBackground(.thinMaterial, for: .navigationBar)
+//            .toolbarBackground(.thinMaterial, for: .navigationBar)
             .foregroundStyle(.primary)
     }
 }

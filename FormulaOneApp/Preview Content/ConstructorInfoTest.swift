@@ -1,8 +1,8 @@
 //
 //  ConstructorInfoTest.swift
-//  MyAppF1_Proyect
+//  FormulaOneApp
 //
-//  Created by Ruben Alonso on 10/11/23.
+//  Created by Ruben Alonso on 24/12/23.
 //
 
 import Foundation
@@ -26,10 +26,12 @@ extension CurrentConstructorInfoVM {
 
 extension CurrentConstructorInfo {
     static let testCurrentConstructorInfo =
-    CurrentConstructorInfo(constructorID: "aston_martin",
-                           url: "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One",
-                           name: "Aston Martin",
-                           nationality: "British")
+    CurrentConstructorInfo(
+        constructorID: "aston_martin",
+        url: "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One",
+        name: "Aston Martin",
+        nationality: "British"
+    )
 }
 
 extension ConstructorLastStanding {

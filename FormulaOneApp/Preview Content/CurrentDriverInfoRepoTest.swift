@@ -24,14 +24,16 @@ extension CurrentDriverInfoVM {
 }
 
 extension CurrentDriverInfo {
-    static let testCurrentDriverInfo = CurrentDriverInfo(driverID: "alonso",
-                                                         permanentNumber: "14",
-                                                         code: "ALB",
-                                                         url: "http://en.wikipedia.org/wiki/Fernando_Alonso",
-                                                         givenName: "Fernando",
-                                                         familyName: "Alonso",
-                                                         dateOfBirth: "1981-07-29",
-                                                         nationality: "Spanish")
+    static let testCurrentDriverInfo = CurrentDriverInfo(
+        driverID: "alonso",
+        permanentNumber: "14",
+        code: "ALB",
+        url: "http://en.wikipedia.org/wiki/Fernando_Alonso",
+        givenName: "Fernando",
+        familyName: "Alonso",
+        dateOfBirth: "1981-07-29",
+        nationality: "Spanish"
+    )
 }
 
 extension DriverLastStanding {

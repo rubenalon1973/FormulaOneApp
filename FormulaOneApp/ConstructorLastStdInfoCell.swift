@@ -1,8 +1,8 @@
 //
 //  ConstructorLastStdInfoCell.swift
-//  MyAppF1_Proyect
+//  FormulaOneApp
 //
-//  Created by Ruben Alonso on 22/11/23.
+//  Created by Ruben Alonso on 24/12/23.
 //
 
 import SwiftUI

@@ -68,12 +68,20 @@ extension Race {
                 grid: "1",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5636736", time: "1:33:56.736"),
+                time: Time(
+                    millis: "5636736",
+                    time: "1:33:56.736"
+                ),
                 fastestLap: FastestLap(
                     rank: "6",
                     lap: "44",
-                    time: FastestLapTime(time: "1:36.236"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "202.452")
+                    time: FastestLapTime(
+                        time: "1:36.236"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "202.452"
+                    )
                 )
             ),
             Results(
@@ -100,12 +108,20 @@ extension Race {
                 grid: "2",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5648723", time: "+11.987"),
+                time: Time(
+                    millis: "5648723",
+                    time: "+11.987"
+                ),
                 fastestLap: FastestLap(
                     rank: "7",
                     lap: "37",
-                    time: FastestLapTime(time: "1:36.344"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "202.225")
+                    time: FastestLapTime(
+                        time: "1:36.344"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "202.225"
+                    )
                 )
             ),
             Results(
@@ -132,12 +148,20 @@ extension Race {
                 grid: "5",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5675373", time: "+38.637"),
+                time: Time(
+                    millis: "5675373",
+                    time: "+38.637"
+                ),
                 fastestLap: FastestLap(
                     rank: "5",
                     lap: "36",
-                    time: FastestLapTime(time: "1:36.156"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "202.620")
+                    time: FastestLapTime(
+                        time: "1:36.156"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "202.620"
+                    )
                 )
             ),
             Results(
@@ -164,12 +188,20 @@ extension Race {
                 grid: "4",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5684788", time: "+48.052"),
+                time: Time(
+                    millis: "5684788",
+                    time: "+48.052"
+                ),
                 fastestLap: FastestLap(
                     rank: "14",
                     lap: "37",
-                    time: FastestLapTime(time: "1:37.130"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "200.588")
+                    time: FastestLapTime(
+                        time: "1:37.130"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "200.588"
+                    )
                 )
             ),
             Results(
@@ -196,12 +228,20 @@ extension Race {
                 grid: "7",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5687713", time: "+50.977"),
+                time: Time(
+                    millis: "5687713",
+                    time: "+50.977"
+                ),
                 fastestLap: FastestLap(
                     rank: "10",
                     lap: "36",
-                    time: FastestLapTime(time: "1:36.546"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "201.802")
+                    time: FastestLapTime(
+                        time: "1:36.546"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "201.802"
+                    )
                 )
             ),
             Results(
@@ -228,12 +268,20 @@ extension Race {
                 grid: "8",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5691238", time: "+54.502"),
+                time: Time(
+                    millis: "5691238",
+                    time: "+54.502"
+                ),
                 fastestLap: FastestLap(
                     rank: "9",
                     lap: "32",
-                    time: FastestLapTime(time: "1:36.546"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "201.802")
+                    time: FastestLapTime(
+                        time: "1:36.546"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "201.802"
+                    )
                 )
             ),
             Results(
@@ -260,12 +308,20 @@ extension Race {
                 grid: "6",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5692609", time: "+55.873"),
+                time: Time(
+                    millis: "5692609",
+                    time: "+55.873"
+                ),
                 fastestLap: FastestLap(
                     rank: "17",
                     lap: "33",
-                    time: FastestLapTime(time: "1:37.221"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "200.401")
+                    time: FastestLapTime(
+                        time: "1:37.221"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "200.401"
+                    )
                 )
             ),
             Results(
@@ -292,12 +348,20 @@ extension Race {
                 grid: "12",
                 laps: "57",
                 status: "Finished",
-                time: Time(millis: "5709383", time: "+1:12.647"),
+                time: Time(
+                    millis: "5709383",
+                    time: "+1:12.647"
+                ),
                 fastestLap: FastestLap(
                     rank: "19",
                     lap: "51",
-                    time: FastestLapTime(time: "1:38.638"),
-                    averageSpeed: AverageSpeed(units: "kph", speed: "196.745")
+                    time: FastestLapTime(
+                        time: "1:38.638"
+                    ),
+                    averageSpeed: AverageSpeed(
+                        units: "kph",
+                        speed: "196.745"
+                    )
                 )
             )
         ]
@@ -330,12 +394,20 @@ extension Results {
         grid: "3",
         laps: "57",
         status: "Finished",
-        time: Time(millis: "5300910", time: "+41.934"),
+        time: Time(
+            millis: "5300910",
+            time: "+41.934"
+        ),
         fastestLap: FastestLap(
             rank: "6",
             lap: "55",
-            time: FastestLapTime(time: "1:25.139"),
-            averageSpeed: AverageSpeed(units: "kph", speed: "228.597")
+            time: FastestLapTime(
+                time: "1:25.139"
+            ),
+            averageSpeed: AverageSpeed(
+                units: "kph",
+                speed: "228.597"
+            )
         )
     )
 }
