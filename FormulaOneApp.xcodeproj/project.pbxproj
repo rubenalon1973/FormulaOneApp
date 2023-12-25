@@ -38,19 +38,26 @@
 		80A200C92B3898DC004B3F82 /* CurrentConstructorInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200C82B3898DC004B3F82 /* CurrentConstructorInfoDTO.swift */; };
 		80A200CB2B389967004B3F82 /* CurrentConstructorLastStandingsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200CA2B389967004B3F82 /* CurrentConstructorLastStandingsDTO.swift */; };
 		80A200CD2B38998D004B3F82 /* CurrentConstructorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200CC2B38998D004B3F82 /* CurrentConstructorTable.swift */; };
-		80A200CF2B3899B2004B3F82 /* ConstructorStandingsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200CE2B3899B2004B3F82 /* ConstructorStandingsTable.swift */; };
 		80A200D12B389BF8004B3F82 /* CurrentConstructorTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 80A200D02B389BF8004B3F82 /* CurrentConstructorTest.json */; };
 		80A200D32B389C0B004B3F82 /* CurrentConstructorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200D22B389C0B004B3F82 /* CurrentConstructorRepository.swift */; };
-		80A200D52B389C1C004B3F82 /* ConstructorLastStdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200D42B389C1C004B3F82 /* ConstructorLastStdRepository.swift */; };
-		80A200D72B389C2D004B3F82 /* ConstructorInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200D62B389C2D004B3F82 /* ConstructorInfoTest.swift */; };
-		80A200D92B389C3B004B3F82 /* CurrentConstructorInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200D82B389C3B004B3F82 /* CurrentConstructorInfoVM.swift */; };
 		80A200DB2B389C6B004B3F82 /* ConstructorInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200DA2B389C6B004B3F82 /* ConstructorInfoDetailView.swift */; };
 		80A200DD2B389C7F004B3F82 /* ConstructorImageGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200DC2B389C7F004B3F82 /* ConstructorImageGridCell.swift */; };
 		80A200DF2B389C89004B3F82 /* ConstructorInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200DE2B389C89004B3F82 /* ConstructorInfoCell.swift */; };
 		80A200E12B389C92004B3F82 /* ConstructorImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200E02B389C92004B3F82 /* ConstructorImageCell.swift */; };
 		80A200E32B389C98004B3F82 /* ConstructorInfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200E22B389C98004B3F82 /* ConstructorInfoDetailCell.swift */; };
-		80A200E52B389CA3004B3F82 /* ConstructorLastStdInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200E42B389CA2004B3F82 /* ConstructorLastStdInfoCell.swift */; };
 		80A200E72B389CAC004B3F82 /* ConstructorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200E62B389CAC004B3F82 /* ConstructorInfoView.swift */; };
+		80A200F92B38A590004B3F82 /* ConstructorStandingsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200F82B38A590004B3F82 /* ConstructorStandingsTable.swift */; };
+		80A200FD2B38A5AD004B3F82 /* ConstructorLastStdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A200FC2B38A5AD004B3F82 /* ConstructorLastStdRepository.swift */; };
+		80A201032B38A5F2004B3F82 /* CurrentConstructorInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201022B38A5F2004B3F82 /* CurrentConstructorInfoVM.swift */; };
+		80A201112B38A668004B3F82 /* ConstructorLastStdInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201102B38A667004B3F82 /* ConstructorLastStdInfoCell.swift */; };
+		80A201152B38A68D004B3F82 /* ConstructorInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201142B38A68D004B3F82 /* ConstructorInfoTest.swift */; };
+		80A201172B38A6A2004B3F82 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201162B38A6A2004B3F82 /* SettingsVM.swift */; };
+		80A201192B38A6AB004B3F82 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201182B38A6AB004B3F82 /* SettingsView.swift */; };
+		80A2011B2B38A6E9004B3F82 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2011A2B38A6E9004B3F82 /* SettingsCell.swift */; };
+		80A2011D2B38A6F1004B3F82 /* SupportMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2011C2B38A6F1004B3F82 /* SupportMailView.swift */; };
+		80A2011F2B38A742004B3F82 /* PrivacyConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2011E2B38A742004B3F82 /* PrivacyConditionsView.swift */; };
+		80A201212B38A74F004B3F82 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201202B38A74F004B3F82 /* IconSelectionView.swift */; };
+		80A201232B38A769004B3F82 /* DonationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A201222B38A769004B3F82 /* DonationDetailsView.swift */; };
 		80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */; };
 		80C808CA2B28DFAE00E99C8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C808C92B28DFAE00E99C8B /* HomeView.swift */; };
 		80C808CF2B28DFAF00E99C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C808CE2B28DFAF00E99C8B /* Preview Assets.xcassets */; };
@@ -130,19 +137,26 @@
 		80A200C82B3898DC004B3F82 /* CurrentConstructorInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConstructorInfoDTO.swift; sourceTree = "<group>"; };
 		80A200CA2B389967004B3F82 /* CurrentConstructorLastStandingsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConstructorLastStandingsDTO.swift; sourceTree = "<group>"; };
 		80A200CC2B38998D004B3F82 /* CurrentConstructorTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConstructorTable.swift; sourceTree = "<group>"; };
-		80A200CE2B3899B2004B3F82 /* ConstructorStandingsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorStandingsTable.swift; sourceTree = "<group>"; };
 		80A200D02B389BF8004B3F82 /* CurrentConstructorTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CurrentConstructorTest.json; sourceTree = "<group>"; };
 		80A200D22B389C0B004B3F82 /* CurrentConstructorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentConstructorRepository.swift; sourceTree = "<group>"; };
-		80A200D42B389C1C004B3F82 /* ConstructorLastStdRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorLastStdRepository.swift; sourceTree = "<group>"; };
-		80A200D62B389C2D004B3F82 /* ConstructorInfoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoTest.swift; sourceTree = "<group>"; };
-		80A200D82B389C3B004B3F82 /* CurrentConstructorInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentConstructorInfoVM.swift; sourceTree = "<group>"; };
 		80A200DA2B389C6B004B3F82 /* ConstructorInfoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoDetailView.swift; sourceTree = "<group>"; };
 		80A200DC2B389C7F004B3F82 /* ConstructorImageGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorImageGridCell.swift; sourceTree = "<group>"; };
 		80A200DE2B389C89004B3F82 /* ConstructorInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoCell.swift; sourceTree = "<group>"; };
 		80A200E02B389C92004B3F82 /* ConstructorImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorImageCell.swift; sourceTree = "<group>"; };
 		80A200E22B389C98004B3F82 /* ConstructorInfoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoDetailCell.swift; sourceTree = "<group>"; };
-		80A200E42B389CA2004B3F82 /* ConstructorLastStdInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorLastStdInfoCell.swift; sourceTree = "<group>"; };
 		80A200E62B389CAC004B3F82 /* ConstructorInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoView.swift; sourceTree = "<group>"; };
+		80A200F82B38A590004B3F82 /* ConstructorStandingsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorStandingsTable.swift; sourceTree = "<group>"; };
+		80A200FC2B38A5AD004B3F82 /* ConstructorLastStdRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorLastStdRepository.swift; sourceTree = "<group>"; };
+		80A201022B38A5F2004B3F82 /* CurrentConstructorInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentConstructorInfoVM.swift; sourceTree = "<group>"; };
+		80A201102B38A667004B3F82 /* ConstructorLastStdInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorLastStdInfoCell.swift; sourceTree = "<group>"; };
+		80A201142B38A68D004B3F82 /* ConstructorInfoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorInfoTest.swift; sourceTree = "<group>"; };
+		80A201162B38A6A2004B3F82 /* SettingsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
+		80A201182B38A6AB004B3F82 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		80A2011A2B38A6E9004B3F82 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		80A2011C2B38A6F1004B3F82 /* SupportMailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportMailView.swift; sourceTree = "<group>"; };
+		80A2011E2B38A742004B3F82 /* PrivacyConditionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyConditionsView.swift; sourceTree = "<group>"; };
+		80A201202B38A74F004B3F82 /* IconSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
+		80A201222B38A769004B3F82 /* DonationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationDetailsView.swift; sourceTree = "<group>"; };
 		80C808C42B28DFAE00E99C8B /* FormulaOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C808C72B28DFAE00E99C8B /* FormulaOneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaOneAppApp.swift; sourceTree = "<group>"; };
 		80C808C92B28DFAE00E99C8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -533,7 +547,7 @@
 		80C8090D2B28E9AF00E99C8B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				80A200D82B389C3B004B3F82 /* CurrentConstructorInfoVM.swift */,
+				80A201022B38A5F2004B3F82 /* CurrentConstructorInfoVM.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -542,7 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				80A200D22B389C0B004B3F82 /* CurrentConstructorRepository.swift */,
-				80A200D42B389C1C004B3F82 /* ConstructorLastStdRepository.swift */,
+				80A200FC2B38A5AD004B3F82 /* ConstructorLastStdRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -552,7 +566,7 @@
 			children = (
 				80C8091A2B28EA7700E99C8B /* ModelDTO */,
 				80A200CC2B38998D004B3F82 /* CurrentConstructorTable.swift */,
-				80A200CE2B3899B2004B3F82 /* ConstructorStandingsTable.swift */,
+				80A200F82B38A590004B3F82 /* ConstructorStandingsTable.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -560,6 +574,11 @@
 		80C809102B28E9E300E99C8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80A201182B38A6AB004B3F82 /* SettingsView.swift */,
+				80A2011C2B38A6F1004B3F82 /* SupportMailView.swift */,
+				80A2011E2B38A742004B3F82 /* PrivacyConditionsView.swift */,
+				80A201202B38A74F004B3F82 /* IconSelectionView.swift */,
+				80A201222B38A769004B3F82 /* DonationDetailsView.swift */,
 				80C809182B28EA6100E99C8B /* Components */,
 			);
 			name = View;
@@ -568,6 +587,7 @@
 		80C809112B28E9EB00E99C8B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				80A201162B38A6A2004B3F82 /* SettingsVM.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -619,6 +639,7 @@
 		80C809182B28EA6100E99C8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				80A2011A2B38A6E9004B3F82 /* SettingsCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -630,7 +651,7 @@
 				80A200DE2B389C89004B3F82 /* ConstructorInfoCell.swift */,
 				80A200E02B389C92004B3F82 /* ConstructorImageCell.swift */,
 				80A200E22B389C98004B3F82 /* ConstructorInfoDetailCell.swift */,
-				80A200E42B389CA2004B3F82 /* ConstructorLastStdInfoCell.swift */,
+				80A201102B38A667004B3F82 /* ConstructorLastStdInfoCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -714,7 +735,7 @@
 			isa = PBXGroup;
 			children = (
 				80A200D02B389BF8004B3F82 /* CurrentConstructorTest.json */,
-				80A200D62B389C2D004B3F82 /* ConstructorInfoTest.swift */,
+				80A201142B38A68D004B3F82 /* ConstructorInfoTest.swift */,
 			);
 			name = CurrentConstructorsTest;
 			sourceTree = "<group>";
@@ -885,10 +906,13 @@
 				80C8092C2B28F41600E99C8B /* NWInterface.swift in Sources */,
 				80A200BB2B378302004B3F82 /* DriverInfoCell.swift in Sources */,
 				80C809302B28F4C400E99C8B /* URLSessionExt.swift in Sources */,
+				80A2011F2B38A742004B3F82 /* PrivacyConditionsView.swift in Sources */,
+				80A2011B2B38A6E9004B3F82 /* SettingsCell.swift in Sources */,
 				80C809282B28F3AA00E99C8B /* CurrentSeasonDTO.swift in Sources */,
 				80A200952B377AD7004B3F82 /* RaceResultsRepository.swift in Sources */,
 				80C809342B28F55900E99C8B /* JSONDecoder.swift in Sources */,
 				80A200992B377B15004B3F82 /* RaceCell.swift in Sources */,
+				80A201232B38A769004B3F82 /* DonationDetailsView.swift in Sources */,
 				80A200B52B3781B5004B3F82 /* CurrentDriverInfoRepoTest.swift in Sources */,
 				80C8093A2B28F6F700E99C8B /* PagerView.swift in Sources */,
 				80C809322B28F52D00E99C8B /* URLRequestExt.swift in Sources */,
@@ -896,7 +920,7 @@
 				80C809362B28F5D500E99C8B /* PageModel.swift in Sources */,
 				80A2009D2B377B5D004B3F82 /* RoundCircuitCell.swift in Sources */,
 				80A200DD2B389C7F004B3F82 /* ConstructorImageGridCell.swift in Sources */,
-				80A200D72B389C2D004B3F82 /* ConstructorInfoTest.swift in Sources */,
+				80A201112B38A668004B3F82 /* ConstructorLastStdInfoCell.swift in Sources */,
 				80A200932B37790A004B3F82 /* CurrentResultsRaceTable.swift in Sources */,
 				80C8094E2B28FCF400E99C8B /* NextRacesView.swift in Sources */,
 				80C809442B28FBBD00E99C8B /* CurrentSeasonRepoTest.swift in Sources */,
@@ -906,41 +930,45 @@
 				80A200E12B389C92004B3F82 /* ConstructorImageCell.swift in Sources */,
 				80A200A92B3780C5004B3F82 /* CurrentDriverInformationDTO.swift in Sources */,
 				80C8093C2B28FB1700E99C8B /* CurrentRaceTableRepository.swift in Sources */,
+				80A201192B38A6AB004B3F82 /* SettingsView.swift in Sources */,
 				80C808C82B28DFAE00E99C8B /* FormulaOneAppApp.swift in Sources */,
-				80A200D92B389C3B004B3F82 /* CurrentConstructorInfoVM.swift in Sources */,
 				80A200C92B3898DC004B3F82 /* CurrentConstructorInfoDTO.swift in Sources */,
 				80C809382B28F6CE00E99C8B /* PageView.swift in Sources */,
 				80A200BF2B378357004B3F82 /* DriverInfoImageCell.swift in Sources */,
 				80C809482B28FC7F00E99C8B /* CurrentCircuitCell.swift in Sources */,
+				80A201032B38A5F2004B3F82 /* CurrentConstructorInfoVM.swift in Sources */,
 				80A200E32B389C98004B3F82 /* ConstructorInfoDetailCell.swift in Sources */,
 				80A200B72B3781D9004B3F82 /* CurrentDriverInfoVM.swift in Sources */,
 				80C8094A2B28FCA500E99C8B /* WeekendScheduleSmallCell.swift in Sources */,
 				80C809462B28FC0B00E99C8B /* CurrentSeasonCell.swift in Sources */,
 				80A200C72B3783D4004B3F82 /* DriverInfoView.swift in Sources */,
-				80A200D52B389C1C004B3F82 /* ConstructorLastStdRepository.swift in Sources */,
 				80A2009B2B377B3F004B3F82 /* DriverResultCell.swift in Sources */,
 				80A200DB2B389C6B004B3F82 /* ConstructorInfoDetailView.swift in Sources */,
 				80C8092E2B28F49F00E99C8B /* DateFormattedExt.swift in Sources */,
 				80A200912B3778E4004B3F82 /* CurrentResultsRaceTableDTO.swift in Sources */,
+				80A200FD2B38A5AD004B3F82 /* ConstructorLastStdRepository.swift in Sources */,
 				80A200CD2B38998D004B3F82 /* CurrentConstructorTable.swift in Sources */,
 				80A200D32B389C0B004B3F82 /* CurrentConstructorRepository.swift in Sources */,
+				80A2011D2B38A6F1004B3F82 /* SupportMailView.swift in Sources */,
 				80A200AB2B3780E3004B3F82 /* CurrentDriverLastStandingsDTO.swift in Sources */,
 				80C8094C2B28FCD100E99C8B /* WeekendScheduleBigCell.swift in Sources */,
 				80A200972B377AF4004B3F82 /* RaceResultsVM.swift in Sources */,
 				80C809502B28FD1800E99C8B /* NextRaceDetailView.swift in Sources */,
 				80A200CB2B389967004B3F82 /* CurrentConstructorLastStandingsDTO.swift in Sources */,
+				80A201212B38A74F004B3F82 /* IconSelectionView.swift in Sources */,
 				80A200AD2B3780FF004B3F82 /* CurrentDriverInfoTable.swift in Sources */,
-				80A200E52B389CA3004B3F82 /* ConstructorLastStdInfoCell.swift in Sources */,
+				80A201152B38A68D004B3F82 /* ConstructorInfoTest.swift in Sources */,
 				80A200C12B37837A004B3F82 /* DriverInfoDetailCell.swift in Sources */,
 				80A200C32B378395004B3F82 /* DriverLastStdCell.swift in Sources */,
 				80A200A32B377C1B004B3F82 /* RaceResultView.swift in Sources */,
+				80A201172B38A6A2004B3F82 /* SettingsVM.swift in Sources */,
 				80A200A12B377BD0004B3F82 /* RacesResultsRepoTest.swift in Sources */,
 				80A200B92B3782C6004B3F82 /* DriverLastStdRepository.swift in Sources */,
 				80A200C52B3783BA004B3F82 /* DriverInfoDetailView.swift in Sources */,
 				80A200AF2B378122004B3F82 /* DriverLastStandingsTable.swift in Sources */,
 				80A200E72B389CAC004B3F82 /* ConstructorInfoView.swift in Sources */,
 				80A200A52B377C43004B3F82 /* RaceResultDetailView.swift in Sources */,
-				80A200CF2B3899B2004B3F82 /* ConstructorStandingsTable.swift in Sources */,
+				80A200F92B38A590004B3F82 /* ConstructorStandingsTable.swift in Sources */,
 				80C8092A2B28F3D300E99C8B /* CurrentRaceTable.swift in Sources */,
 				80C809402B28FB6000E99C8B /* NextRaceCell.swift in Sources */,
 			);
@@ -1103,6 +1131,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneApp/Preview Content\"";
@@ -1132,6 +1161,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FormulaOneApp/Preview Content\"";
