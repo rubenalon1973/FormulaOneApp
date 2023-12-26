@@ -9,27 +9,23 @@ import SwiftUI
 
 struct AllSeasonTableListView: View {
     @ObservedObject var allSeasonVM: AllSeasonTableVM
-
+    
     var body: some View {
-            ScrollView {
-                LazyVStack {
-                    ForEach(allSeasonVM.reversedSeasons) { season in
-                        NavigationLink {
-                            AllSeasonTableDetailView(season: season)
-                        } label: {
-                            SeasonTableCell(season: season)
-                        }
+        ScrollView {
+            LazyVStack {
+                ForEach(allSeasonVM.reversedSeasons) { season in
+                    NavigationLink {
+                        AllSeasonTableDetailView(season: season)
+                    } label: {
+                        SeasonTableCell(season: season)
                     }
                 }
             }
-            .navigationTitle("All season")
-            .navigationDestination(for: Season.self, destination: { season in
-                AllSeasonTableDetailView(season: season)
-            })
+        }
+        .navigationBarTitle("All season", displayMode: .large)
         .foregroundStyle(.primary)
     }
 }
-
 #Preview {
     AllSeasonTableListView(allSeasonVM: .seasonTableVMTest)
     }

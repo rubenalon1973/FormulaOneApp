@@ -13,7 +13,6 @@ struct SettingsView: View {
     @State var view: Bool = false
     
     var body: some View {
-//        NavigationView {
             ScrollView {
                 VStack {
                     NavigationLink {
@@ -41,9 +40,7 @@ struct SettingsView: View {
                     }
                 }
             }
-            .navigationTitle("Settings")
             .foregroundStyle(.primary)
-//        }
     }
 }
 

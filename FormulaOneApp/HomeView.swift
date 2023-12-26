@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-enum Tab: Int {
-    case nextRaces = 1
-    case results = 2
-    case drivers = 3
-    case teams = 4
-    case history = 5
-    case settings = 6
+enum Tab {
+    case nextRaces
+    case results
+    case drivers
+    case teams
+    case settings
     
     var title: String {
         switch self {
@@ -25,8 +24,6 @@ enum Tab: Int {
                 return "Drivers"
             case .teams:
                 return "Teams"
-            case .history:
-                return "History"
             case .settings:
                 return "Settings"
         }
@@ -85,22 +82,29 @@ struct HomeView: View {
                         }
                     }
                     .tag(Tab.settings)
-                AllSeasonTableListView(allSeasonVM: allSeasonVM)
-                    .tabItem {
-                        VStack {
-                            Text("History")
-                            Image(systemName: "flag.filled.and.flag.crossed")
-                        }
-                    }
-                    .tag(Tab.history)
             }
             .navigationTitle(selection.title)
-            .toolbarBackground(.thinMaterial, for: .tabBar)
-            .toolbarBackground(.visible, for: .tabBar)
-            .tint(Color.blue)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        AllSeasonTableListView(allSeasonVM: allSeasonVM)
+                    } label: {
+                        VStack {
+                            Image(systemName: "flag.filled.and.flag.crossed")
+                                .foregroundColor(Color.blue)
+                            Text("History")
+                                .font(.caption)
+                                .bold()
+                                .foregroundColor(Color.blue)
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
+
 
 #Preview {
     HomeView()

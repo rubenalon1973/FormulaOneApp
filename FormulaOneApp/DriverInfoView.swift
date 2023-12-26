@@ -15,16 +15,12 @@ struct DriverInfoView: View {
             LazyVStack {
                 DriversImageGridCell()
                 ForEach(driverVM.driverInfo) { driver in
-                    NavigationLink {
-                        DriverInfoDetailView(driverVM: driverVM,
-                                             driver: driver)
-                    } label: {
+                    NavigationLink(value: driver) {
                         DriverInfoCell(driver: driver)
                     }
                 }
             }
         }
-        .navigationTitle("Drivers info")
         .navigationDestination(for: CurrentDriverInfo.self, destination: { driver in
             DriverInfoDetailView(driverVM: driverVM,
                                  driver: driver)

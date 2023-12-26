@@ -21,7 +21,6 @@ struct RaceResultView: View {
                 }
             }
         }
-        .navigationTitle("Race results")
         .navigationDestination(for: Race.self) { result in
             RaceResultDetailView(raceVM: raceVM, race: result)
         }

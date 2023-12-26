@@ -15,15 +15,12 @@ struct ConstructorInfoView: View {
             LazyVStack {
                 ConstructorImageGridCell()
                 ForEach(constructorVM.constructorInfo) { constructor in
-                    NavigationLink {
-                        ConstructorInfoDetailView(constructorVM: constructorVM, constructor: constructor)
-                    } label: {
+                    NavigationLink(value: constructor) {
                         ConstructorInfoCell(constructor: constructor)
                     }
                 }
             }
         }
-        .navigationTitle("Teams info")
         .navigationDestination(for: CurrentConstructorInfo.self,
                                destination: { constructor in
             ConstructorInfoDetailView(
