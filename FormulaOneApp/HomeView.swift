@@ -13,7 +13,6 @@ enum Tab {
     case drivers
     case teams
     case settings
-    case history
     
     var title: String {
         switch self {
@@ -27,8 +26,6 @@ enum Tab {
                 return "Teams"
             case .settings:
                 return "Settings"
-            case .history:
-                return "History"
         }
     }
 }
