@@ -25,7 +25,7 @@ func getJSON<JSON: Codable>(url: URL, type: JSON.Type) async throws -> JSON {
         case 400...450:
             throw NetworkErrors.notFound
         default:
-            throw NetworkErrors.unknow
+            throw NetworkErrors.unknown
     }
 }
 
@@ -47,6 +47,6 @@ func getJSONRequest<JSON: Codable>(request: URLRequest, type: JSON.Type) async t
         case 400...450:
             throw NetworkErrors.notFound
         default:
-            throw NetworkErrors.unknow
+            throw NetworkErrors.unknown
     }
 }

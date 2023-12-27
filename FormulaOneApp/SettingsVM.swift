@@ -8,6 +8,9 @@
 import SwiftUI
 
 class SettingsVM: ObservableObject {
+    @Published var showAlert = false
+    @Published var alertMessage = ""
+    
     func openMailApp() {
         let email = "support@myappf1.com"
         let subject = "Attention to Support"
@@ -18,20 +21,26 @@ class SettingsVM: ObservableObject {
         }
     }
     
+    private func handleAppIconChangeError(_ error: NetworkErrors) {
+        showAlert = true
+        alertMessage = "Error changing app icon: \(error.description)"
+    }
+    
     @MainActor
-    func changeAppIcon(iconName: String) async throws {
+    func changeAppIcon(iconName: String) async -> Result<Void, NetworkErrors> {
         guard !iconName.isEmpty else {
-            throw NetworkErrors.urlRequestNotValid
+            handleAppIconChangeError(.urlRequestNotValid)
+            return .failure(.urlRequestNotValid)
         }
         
-        return try await withCheckedThrowingContinuation { continuation in
-            UIApplication.shared.setAlternateIconName(iconName) { error in
-                if let _ = error {
-                    continuation.resume(throwing: NetworkErrors.badResponse)
-                } else {
-                    continuation.resume()
-                }
-            }
+        do {
+            try await UIApplication.shared.setAlternateIconName(iconName)
+            showAlert = true
+            alertMessage = "App Icon changed successfully to \(iconName)"
+            return .success(())
+        } catch {
+            handleAppIconChangeError(.unknown)
+            return .failure(.unknown)
         }
     }
 }

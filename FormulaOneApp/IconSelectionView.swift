@@ -9,11 +9,9 @@ import SwiftUI
 
 struct IconSelectionView: View {
     @ObservedObject var settingsVM: SettingsVM
-    let iconOptions = ["AppIcon-1", "AppIcon-2", "AppIcon-3", "AppIcon-5"]
     @State private var selectedIcon = "AppIcon-1"
-    @State private var showAlert = false
-    @State private var alertMessage = ""
-    @State private var errorMessage = ""
+    
+    let iconOptions = ["AppIcon-1", "AppIcon-2", "AppIcon-3", "AppIcon-5"]
     
     var body: some View {
         VStack {
@@ -36,14 +34,7 @@ struct IconSelectionView: View {
             
             Button(action: {
                 Task {
-                    do {
-                        try  await settingsVM.changeAppIcon(iconName: selectedIcon)
-                    } catch let error as NetworkErrors {
-                        errorMessage = error.localizedDescription
-                        _ = ""
-                    } catch {
-                        _ = ""
-                    }
+                    await settingsVM.changeAppIcon(iconName: selectedIcon)
                 }
             }) {
                 Text("Confirm Selection")
@@ -55,11 +46,6 @@ struct IconSelectionView: View {
             }
             .padding()
             
-            if showAlert {
-                Text(alertMessage)
-                    .foregroundColor(.green)
-            }
-            
             Spacer()
         }
         .navigationTitle("Change App Icon")
@@ -68,27 +54,14 @@ struct IconSelectionView: View {
             .fill(Color.gray.opacity(0.3)))
         .padding(10)
         .alert(
-            isPresented: $showAlert
+            isPresented: $settingsVM.showAlert
         ) {
             Alert(
-                title: Text(
-                    "App Icon Changed"
-                ),
-                message: Text(
-                    alertMessage
-                ),
-                dismissButton: .default(
-                    Text(
-                        "OK"
-                    )
-                )
+                title: Text("App Icon Changed"),
+                message: Text(settingsVM.alertMessage),
+                dismissButton: .default(Text("OK"))
             )
         }
-    }
-    
-    func showAlert(message: String) {
-        alertMessage = message
-        showAlert = true
     }
 }
 

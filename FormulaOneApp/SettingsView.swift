@@ -39,6 +39,7 @@ struct SettingsView: View {
                         SettingsCell(icon: "hand.thumbsup.fill", title: "Donations")
                     }
                 }
+                .padding(.vertical)
             }
             .foregroundStyle(.primary)
     }

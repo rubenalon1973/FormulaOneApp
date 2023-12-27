@@ -12,7 +12,7 @@ enum NetworkErrors: String, Error {
     case general
     case badResponse
     case notFound
-    case unknow
+    case unknown
     
     var description: String {
         switch self {
@@ -24,7 +24,7 @@ enum NetworkErrors: String, Error {
                 return "Wrong answer from the server"
             case .notFound:
                 return "Not found"
-            case .unknow:
+            case .unknown:
                 return "Unknow error"
         }
     }
