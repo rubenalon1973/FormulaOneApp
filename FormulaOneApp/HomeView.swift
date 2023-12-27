@@ -120,65 +120,63 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack(alignment: .top) {
-                TabView(selection: $selection) {
-                    NextRacesView(currentVM: currentRaceVM)
-                        .tabItem {
-                            VStack {
-                                Text("Next races")
-                                Image(systemName: "flag.checkered.2.crossed")
-                            }
+            TabView(selection: $selection) {
+                NextRacesView(currentVM: currentRaceVM)
+                    .tabItem {
+                        VStack {
+                            Text("Next races")
+                            Image(systemName: "flag.checkered.2.crossed")
                         }
-                        .tag(Tab.nextRaces)
-                    
-                    RaceResultView(raceVM: raceResultVM)
-                        .tabItem {
-                            VStack {
-                                Text("Results")
-                                Image(systemName: "list.bullet.clipboard")
-                            }
+                    }
+                    .tag(Tab.nextRaces)
+                
+                RaceResultView(raceVM: raceResultVM)
+                    .tabItem {
+                        VStack {
+                            Text("Results")
+                            Image(systemName: "list.bullet.clipboard")
                         }
-                        .tag(Tab.results)
-                    
-                    DriverInfoView(driverVM: currentDriverVM)
-                        .tabItem {
-                            VStack {
-                                Text("Drivers")
-                                Image(systemName: "person.fill")
-                            }
+                    }
+                    .tag(Tab.results)
+                
+                DriverInfoView(driverVM: currentDriverVM)
+                    .tabItem {
+                        VStack {
+                            Text("Drivers")
+                            Image(systemName: "person.fill")
                         }
-                        .tag(Tab.drivers)
-                    
-                    ConstructorInfoView(constructorVM: currentConstructorVM)
-                        .tabItem {
-                            VStack {
-                                Text("Teams")
-                                Image(systemName: "car.2")
-                            }
+                    }
+                    .tag(Tab.drivers)
+                
+                ConstructorInfoView(constructorVM: currentConstructorVM)
+                    .tabItem {
+                        VStack {
+                            Text("Teams")
+                            Image(systemName: "car.2")
                         }
-                        .tag(Tab.teams)
-                    
-                    SettingsView(settingsVM: settingsVM)
-                        .tabItem {
-                            VStack {
-                                Text("Settings")
-                                Image(systemName: "gear")
-                            }
+                    }
+                    .tag(Tab.teams)
+                
+                SettingsView(settingsVM: settingsVM)
+                    .tabItem {
+                        VStack {
+                            Text("Settings")
+                            Image(systemName: "gear")
                         }
-                        .tag(Tab.settings)
-                }
-                .navigationBarTitle(selection.title, displayMode: .inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        NavigationLink(destination: AllSeasonTableListView(allSeasonVM: allSeasonVM)) {
-                            VStack {
-                                Image(systemName: "flag.filled.and.flag.crossed")
-                                    .foregroundColor(Color.blue)
-                                Text("History")
-                                    .font(.caption)
-                                    .bold()
-                                    .foregroundColor(Color.blue)
-                            }
+                    }
+                    .tag(Tab.settings)
+            }
+            .navigationBarTitle(selection.title, displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AllSeasonTableListView(allSeasonVM: allSeasonVM)) {
+                        VStack {
+                            Image(systemName: "flag.filled.and.flag.crossed")
+                                .foregroundColor(Color.blue)
+                            Text("History")
+                                .font(.caption)
+                                .bold()
+                                .foregroundColor(Color.blue)
                         }
                     }
                 }
@@ -186,6 +184,7 @@ struct HomeView: View {
         }
     }
 }
+
 #Preview {
     HomeView()
 }
