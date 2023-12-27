@@ -16,7 +16,12 @@ final class CurrentConstructorInfoRepoTest: CurrentConstructorRepositoryProtocol
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(.shortDateFormat)
         
-        return try decoder.decode(CurrentConstructorsInfoDTO.self, from: data).mrDataCurrentConstructors.constructorTable.constructors.map { $0.mapToModel() }
+        return try decoder.decode(
+            CurrentConstructorsInfoDTO.self,
+            from: data
+        ).mrDataCurrentConstructors.constructorTable.constructors.map {
+            $0.mapToModel()
+        }
     }
 }
 
@@ -35,9 +40,16 @@ extension CurrentConstructorInfo {
 }
 
 extension ConstructorLastStanding {
-    static let testConstructorLastStanding = ConstructorLastStanding(position: "1", positionText: "1", points: "822", wins: "20", constructor: InfoConstructor(
-        constructorID: "red_bull",
-        url: "http://en.wikipedia.org/wiki/Red_Bull_Racing",
-        name: "Red Bull",
-        nationality: "Austrian"))
+    static let testConstructorLastStanding = ConstructorLastStanding(
+        position: "1",
+        positionText: "1",
+        points: "822",
+        wins: "20",
+        constructor: InfoConstructor(
+            constructorID: "red_bull",
+            url: "http://en.wikipedia.org/wiki/Red_Bull_Racing",
+            name: "Red Bull",
+            nationality: "Austrian"
+        )
+    )
 }

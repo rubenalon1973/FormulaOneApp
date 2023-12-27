@@ -18,6 +18,16 @@ final class AllDriversInSeasonRepository: AllDriversInSeasonRepositoryProtocol {
     
     func getAllDriversInSeason(year: String) async throws -> [DriverInSeason] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getAllDriversInSeasonURL(year: year), limit: 50), type: AllDriversInSeasonDTO.self).mrDataDriversInSeason.driverTable.drivers.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getAllDriversInSeasonURL(
+                    year: year
+                ),
+                limit: 50
+            ),
+            type: AllDriversInSeasonDTO.self
+        ).mrDataDriversInSeason.driverTable.drivers.map {
+            $0.mapToModel()
+        }
     }
 }

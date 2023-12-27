@@ -45,8 +45,9 @@ extension DriverLastStandingsTableDTO {
     func mapToModel() -> DriverLastStandingsTable {
         let mappedLastStandingsLists = lastStandingsLists.map { $0.mapToModel() }
         
-        return DriverLastStandingsTable(season: season,
-                                        lastStandingsLists: mappedLastStandingsLists)
+        return DriverLastStandingsTable(
+            season: season,
+            lastStandingsLists: mappedLastStandingsLists)
     }
 }
 
@@ -65,9 +66,11 @@ extension DriverLastStandingsListDTO {
     func mapToModel() -> DriverLastStandingsList {
         let mappedDriverLastStandings = driverLastStandings.map { $0.mapToMdel() }
         
-        return DriverLastStandingsList(season: season,
-                                       round: round,
-                                       driverLastStandings: mappedDriverLastStandings)
+        return DriverLastStandingsList(
+            season: season,
+            round: round,
+            driverLastStandings: mappedDriverLastStandings
+        )
     }
 }
 
@@ -88,12 +91,14 @@ extension DriverLastStandingDTO {
     func mapToMdel() -> DriverLastStanding {
         let mappedConstructors = constructors.map { $0.mapToModel() }
         
-        return DriverLastStanding(position: position,
-                                  positionText: positionText,
-                                  points: points,
-                                  wins: wins,
-                                  driver: driver.mapToModel(),
-                                  constructors: mappedConstructors)
+        return DriverLastStanding(
+            position: position,
+            positionText: positionText,
+            points: points,
+            wins: wins,
+            driver: driver.mapToModel(),
+            constructors: mappedConstructors
+        )
     }
 }
 
@@ -112,10 +117,12 @@ struct LastStandingConstructorDTO: Codable {
 extension LastStandingConstructorDTO {
     func mapToModel() -> LastStandingConstructor {
         
-        return LastStandingConstructor(constructorID: constructorID,
-                                       url: url,
-                                       name: name,
-                                       nationality: nationality)
+        return LastStandingConstructor(
+            constructorID: constructorID,
+            url: url,
+            name: name,
+            nationality: nationality
+        )
     }
 }
 
@@ -134,13 +141,15 @@ struct LastStandingDriverDTO: Codable {
 extension LastStandingDriverDTO {
     func mapToModel() -> LastStandingDriver {
         
-        return LastStandingDriver(driverID: driverID,
-                                  permanentNumber: permanentNumber,
-                                  code: code,
-                                  url: url,
-                                  givenName: givenName,
-                                  familyName: familyName,
-                                  dateOfBirth: dateOfBirth,
-                                  nationality: nationality)
+        return LastStandingDriver(
+            driverID: driverID,
+            permanentNumber: permanentNumber,
+            code: code,
+            url: url,
+            givenName: givenName,
+            familyName: familyName,
+            dateOfBirth: dateOfBirth,
+            nationality: nationality
+        )
     }
 }

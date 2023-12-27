@@ -15,12 +15,17 @@ let urlCircuitInSeason = Bundle.main.url(forResource: "AllCircuitsInSeasonTest",
     func getAllCircuitsInSeason(season: String) async throws -> [CircuitInSeason] {
         let data = try Data(contentsOf: urlCircuitInSeason)
         
-        return try JSONDecoder().decode(AllCircuitsInSeasonDTO.self, from: data).mrDataAllCircuits.circuitTable.circuits.map { $0.mapToModel() }
+        return try JSONDecoder().decode(
+            AllCircuitsInSeasonDTO.self,
+            from: data
+        ).mrDataAllCircuits.circuitTable.circuits.map {
+            $0.mapToModel()
+        }
     }
 }
 
 extension AllCircuitsInSeasonVM {
-    static let circuitsInSeasonVMTest = AllCircuitsInSeasonVM(selectedSeason: "2023")
+    static let circuitsInSeasonVMTest = AllCircuitsInSeasonVM(selectedSeason: "2024")
 }
 
 extension CircuitInSeason {

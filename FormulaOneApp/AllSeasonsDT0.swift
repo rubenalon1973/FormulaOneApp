@@ -55,6 +55,9 @@ struct SeasonDTO: Codable {
 
 extension SeasonDTO {
     func mapToModel() -> Season {
-        Season(season: season, url: url)
+        Season(
+            season: season,
+            url: url
+        )
     }
 }

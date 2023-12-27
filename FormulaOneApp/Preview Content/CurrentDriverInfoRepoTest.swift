@@ -15,7 +15,12 @@ final class CurrentDriverInfoRepoTest: CurrentDriverInfoRepositoryProtocol {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(.shortDateFormat)
         
-        return try decoder.decode(CurrentDriverInformationDTO.self, from: data).mrDataCurrentDriverInfo.driverTable.drivers.map { $0.mapToModel() }
+        return try decoder.decode(
+            CurrentDriverInformationDTO.self,
+            from: data
+        ).mrDataCurrentDriverInfo.driverTable.drivers.map {
+            $0.mapToModel()
+        }
     }
 }
 

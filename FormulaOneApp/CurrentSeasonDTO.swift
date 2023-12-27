@@ -47,8 +47,10 @@ extension CurrentRaceTableDTO {
     func mapToModel() -> CurrentRaceTable {
         let mappedRaces = races.map { $0.mapToModel() }
         
-        return CurrentRaceTable(season: season,
-                                races: mappedRaces)
+        return CurrentRaceTable(
+            season: season,
+            races: mappedRaces
+        )
     }
 }
 
@@ -80,18 +82,20 @@ struct CurrentRaceDTO: Codable {
 
 extension CurrentRaceDTO {
     func mapToModel() -> CurrentRace {
-        CurrentRace(season: season,
-                    round: round,
-                    url: url,
-                    raceName: raceName,
-                    circuit: circuit.mapToModel(),
-                    date: date,
-                    time: time,
-                    firstPractice: firstPractice.mapToModel(),
-                    secondPractice: secondPractice.mapToModel(),
-                    thirdPractice: thirdPractice?.mapToModel(),
-                    qualifying: qualifying.mapToModel(),
-                    sprint: sprint?.mapToModel())
+        CurrentRace(
+            season: season,
+            round: round,
+            url: url,
+            raceName: raceName,
+            circuit: circuit.mapToModel(),
+            date: date,
+            time: time,
+            firstPractice: firstPractice.mapToModel(),
+            secondPractice: secondPractice.mapToModel(),
+            thirdPractice: thirdPractice?.mapToModel(),
+            qualifying: qualifying.mapToModel(),
+            sprint: sprint?.mapToModel()
+        )
     }
 }
 
@@ -111,10 +115,12 @@ struct CurrentCircuitDTO: Codable {
 
 extension CurrentCircuitDTO {
     func mapToModel() -> CurrentCircuit {
-        CurrentCircuit(circuitID: circuitID,
-                       url: url,
-                       circuitName: circuitName,
-                       location: location.mapToModel())
+        CurrentCircuit(
+            circuitID: circuitID,
+            url: url,
+            circuitName: circuitName,
+            location: location.mapToModel()
+        )
     }
 }
 
@@ -125,10 +131,12 @@ struct CurrentLocationDTO: Codable {
 
 extension CurrentLocationDTO {
     func mapToModel() -> CurrentLocation {
-        CurrentLocation(lat: lat,
-                        long: long,
-                        locality: locality,
-                        country: country)
+        CurrentLocation(
+            lat: lat,
+            long: long,
+            locality: locality,
+            country: country
+        )
     }
 }
 // MARK: - PracticeSessionDTO
@@ -139,6 +147,9 @@ struct PracticeSessionDTO: Codable {
 
 extension PracticeSessionDTO {
     func mapToModel() -> PracticeSession {
-        PracticeSession(date: date, time: time)
+        PracticeSession(
+            date: date,
+            time: time
+        )
     }
 }

@@ -17,6 +17,16 @@ final class AllCircuitInSeasonRepository: AllCircuitInSeasonRepositoryProtocol {
     
     func getAllCircuitsInSeason(season: String) async throws -> [CircuitInSeason] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getAllCircuitsInSeasonURL(season: season), limit: 70), type: AllCircuitsInSeasonDTO.self).mrDataAllCircuits.circuitTable.circuits.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getAllCircuitsInSeasonURL(
+                    season: season
+                ),
+                limit: 70
+            ),
+            type: AllCircuitsInSeasonDTO.self
+        ).mrDataAllCircuits.circuitTable.circuits.map {
+            $0.mapToModel()
+        }
     }
 }

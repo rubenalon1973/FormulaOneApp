@@ -18,9 +18,15 @@ final class CurrentRaceTableRepository: CurrentRaceTableRepositoryProtocol {
     private init() {}
     
     func getRaceTable() async throws -> [CurrentRace] {
-        return try await getJSON(url: .getCurrentRaceTableURL, type: CurrentSeasonDTO.self).mrDataCurrent.raceTable.races.map { $0.mapToModel() }
+        
+        return try await getJSON(
+            url: .getCurrentRaceTableURL,
+            type: CurrentSeasonDTO.self
+        ).mrDataCurrent.raceTable.races.map {
+            $0.mapToModel()
+        }
     }
-    
+//    MARK: Func in case the API does not return data for this module at the end of the season, take them from Test
 //    func getDemoRaceTable() async throws -> [CurrentRace] {
 //        let urlDemoRaceTable = Bundle.main.url(forResource: "CurrentSeasonDemoData", withExtension: "json")!
 //        
@@ -28,6 +34,11 @@ final class CurrentRaceTableRepository: CurrentRaceTableRepositoryProtocol {
 //        let decoder = JSONDecoder()
 //        decoder.dateDecodingStrategy = .formatted(.longDateFormat)
 //        
-//        return try decoder.decode(CurrentSeasonDTO.self, from: data).mrDataCurrent.raceTable.races.map { $0.mapToModel() }
+//        return try decoder.decode(
+//            CurrentSeasonDTO.self,
+//            from: data
+//        ).mrDataCurrent.raceTable.races.map {
+//            $0.mapToModel()
+//        }
 //    }
 }

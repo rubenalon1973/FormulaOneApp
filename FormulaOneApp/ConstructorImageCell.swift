@@ -30,7 +30,8 @@ struct ConstructorImageCell: View {
                     .padding()
             }
         }
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 10)
+            .fill(Color.gray.opacity(0.3)))
         .padding(10)
     }
 }

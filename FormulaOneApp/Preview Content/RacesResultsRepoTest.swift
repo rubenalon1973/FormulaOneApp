@@ -16,7 +16,12 @@ final class RacesResultsRepoTest: RaceResultsRepositoryProtocol {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(.shortDateFormat)
         
-        return try decoder.decode(CurrentResultsRaceTableDTO.self, from: data).mrDataCurrentResults.raceTable.races.map { $0.mapToModel() }
+        return try decoder.decode(
+            CurrentResultsRaceTableDTO.self,
+            from: data
+        ).mrDataCurrentResults.raceTable.races.map {
+            $0.mapToModel()
+        }
     }
 }
 

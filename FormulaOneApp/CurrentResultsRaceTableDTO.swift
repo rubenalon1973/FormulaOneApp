@@ -45,8 +45,10 @@ extension ResultsRaceTableDTO {
     func mapToModel() -> CurrentResultsRaceTable {
         let mappedRaces = races.map { $0.mapToModel() }
         
-        return CurrentResultsRaceTable(season: season,
-                                       races: mappedRaces)
+        return CurrentResultsRaceTable(
+            season: season,
+            races: mappedRaces
+        )
     }
 }
 
@@ -71,14 +73,16 @@ extension ResultsRaceDTO {
     func mapToModel() -> Race {
         let mappedResults = results.map { $0.mapToModel() }
         
-        return Race(season: season,
-                    round: round,
-                    url: url,
-                    raceName: raceName,
-                    circuit: circuit.mapToModel(),
-                    date: date,
-                    time: time,
-                    results: mappedResults)
+        return Race(
+            season: season,
+            round: round,
+            url: url,
+            raceName: raceName,
+            circuit: circuit.mapToModel(),
+            date: date,
+            time: time,
+            results: mappedResults
+        )
     }
 }
 
@@ -98,10 +102,12 @@ struct ResultsCircuitDTO: Codable {
 
 extension ResultsCircuitDTO {
     func mapToModel() -> Circuit {
-        Circuit(circuitID: circuitID,
-                url: url,
-                circuitName: circuitName,
-                location: location.mapToModel())
+        Circuit(
+            circuitID: circuitID,
+            url: url,
+            circuitName: circuitName,
+            location: location.mapToModel()
+        )
     }
 }
 
@@ -112,10 +118,12 @@ struct ResultLocationDTO: Codable {
 
 extension ResultLocationDTO {
     func mapToModel() -> Location {
-        Location(lat: lat,
-                 long: long,
-                 locality: locality,
-                 country: country)
+        Location(
+            lat: lat,
+            long: long,
+            locality: locality,
+            country: country
+        )
     }
 }
 
@@ -140,16 +148,19 @@ struct ResultsDTO: Codable {
 
 extension ResultsDTO {
     func mapToModel() -> Results {
-        return Results(number: number,
-                       position: position,
-                       positionText: positionText,
-                       points: points, driver: driver.mapToModel(),
-                       constructor: constructor.mapToModel(),
-                       grid: grid,
-                       laps: laps,
-                       status: status,
-                       time: time?.mapToModel(),
-                       fastestLap: fastestLap?.mapToModel())
+        return Results(
+            number: number,
+            position: position,
+            positionText: positionText,
+            points: points,
+            driver: driver.mapToModel(),
+            constructor: constructor.mapToModel(),
+            grid: grid,
+            laps: laps,
+            status: status,
+            time: time?.mapToModel(),
+            fastestLap: fastestLap?.mapToModel()
+        )
     }
 }
 // MARK: - Constructor
@@ -167,10 +178,12 @@ struct ResultsConstructorDTO: Codable {
 
 extension ResultsConstructorDTO {
     func mapToModel() -> Constructor {
-        Constructor(constructorID: constructorID.rawValue,
-                    url: url,
-                    name: name.rawValue,
-                    nationality: nationality.rawValue)
+        Constructor(
+            constructorID: constructorID.rawValue,
+            url: url,
+            name: name.rawValue,
+            nationality: nationality.rawValue
+        )
     }
 }
 
@@ -189,14 +202,16 @@ struct ResultsDriverDTO: Codable {
 
 extension ResultsDriverDTO {
     func mapToModel() -> Driver {
-        Driver(driverID: driverID,
-               permanentNumber: permanentNumber,
-               code: code,
-               url: url,
-               givenName: givenName,
-               familyName: familyName,
-               dateOfBirth: dateOfBirth,
-               nationality: nationality.rawValue)
+        Driver(
+            driverID: driverID,
+            permanentNumber: permanentNumber,
+            code: code,
+            url: url,
+            givenName: givenName,
+            familyName: familyName,
+            dateOfBirth: dateOfBirth,
+            nationality: nationality.rawValue
+        )
     }
 }
 
@@ -215,10 +230,12 @@ struct ResultsFastestLapDTO: Codable {
 
 extension ResultsFastestLapDTO {
     func mapToModel() -> FastestLap {
-        FastestLap(rank: rank,
-                   lap: lap,
-                   time: time.mapToModel(),
-                   averageSpeed: averageSpeed.mapToModel())
+        FastestLap(
+            rank: rank,
+            lap: lap,
+            time: time.mapToModel(),
+            averageSpeed: averageSpeed.mapToModel()
+        )
     }
 }
 

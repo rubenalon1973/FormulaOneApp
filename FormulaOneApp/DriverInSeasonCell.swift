@@ -47,7 +47,8 @@ struct DriverInSeasonCell: View {
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .center)
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 10)
+            .fill(Color.gray.opacity(0.3)))
     }
 }
 

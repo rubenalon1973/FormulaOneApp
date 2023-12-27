@@ -29,7 +29,9 @@ struct RaceResultDetailView: View {
 }
 
 #Preview {
-    RaceResultDetailView(raceVM: .racesResultsVMTest,
-                         race: .testRacesResults)
+    RaceResultDetailView(
+        raceVM: .racesResultsVMTest,
+        race: .testRacesResults
+    )
 }
 

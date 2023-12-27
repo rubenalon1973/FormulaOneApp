@@ -18,6 +18,11 @@ final class DriverLastStdRepository: DriverLastStdRepositoryProtocol {
     
     func getDriverLastStd() async throws -> [DriverLastStandingsList] {
         
-        return try await getJSON(url: .getCurrentDriverLastStdURL, type: CurrentDriverLastStandingsDTO.self).mrDataDriverLastStandings.standingsTable.lastStandingsLists.map { $0.mapToModel() }
+        return try await getJSON(
+            url: .getCurrentDriverLastStdURL,
+            type: CurrentDriverLastStandingsDTO.self
+        ).mrDataDriverLastStandings.standingsTable.lastStandingsLists.map {
+            $0.mapToModel()
+        }
     }
 }

@@ -13,11 +13,16 @@ final class AllConstructorsInSeasonVM: ObservableObject {
     @Published var errorMessage = ""
     let selectedYear: String
     
-    init(repository: AllConstructorInSeasonRepositoryProtocol = AllConstructrorsInSeasonRepository.shared, selectedYear: String) {
+    init(
+        repository: AllConstructorInSeasonRepositoryProtocol = AllConstructrorsInSeasonRepository.shared,
+        selectedYear: String
+    ) {
         self.repository = repository
         self.selectedYear = selectedYear
         Task {
-            await fetchAllConstructorsInSeason(year: selectedYear)
+            await fetchAllConstructorsInSeason(
+                year: selectedYear
+            )
         }
     }
     

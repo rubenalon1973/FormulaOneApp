@@ -22,7 +22,9 @@ struct SupportMailView: View {
                     .font(.title)
                     .bold()
                 
-                Text("If you're facing any challenges or have feedback, don't hesitate to reach out to our support team. Use the button below to send us an email describing your issue, and we'll get back to you as soon as possible.")
+                Text(
+                    "If you're facing any challenges or have feedback, don't hesitate to reach out to our support team. Use the button below to send us an email describing your issue, and we'll get back to you as soon as possible."
+                )
                     .font(.title3)
                 
                 Button(action: {
@@ -42,7 +44,8 @@ struct SupportMailView: View {
             .navigationTitle("Support")
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .center)
-            .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+            .background(RoundedRectangle(cornerRadius: 10)
+                .fill(Color.gray.opacity(0.3)))
             .padding(10)
     }
 }

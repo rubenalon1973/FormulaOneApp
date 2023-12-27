@@ -47,19 +47,31 @@ struct AllSeasonTableDetailView: View {
                     .padding(10)
                     
                     NavigationLink {
-                        AllCircuitsInSeasonView(vm: AllCircuitsInSeasonVM(selectedSeason: "\(season.season)"))
+                        AllCircuitsInSeasonView(
+                            vm: AllCircuitsInSeasonVM(
+                                selectedSeason: "\(season.season)"
+                            )
+                        )
                     } label: {
                         SeasonDetailCell(title: "Circuits")
                     }
 
                     NavigationLink {
-                        AllConstructorInSeasonView(vm: AllConstructorsInSeasonVM(selectedYear: "\(season.season)"))
+                        AllConstructorInSeasonView(
+                            vm: AllConstructorsInSeasonVM(
+                                selectedYear: "\(season.season)"
+                            )
+                        )
                     } label: {
                         SeasonDetailCell(title: "Constructors")
                     }
 
                     NavigationLink {
-                        AllDriversInSeasonView(vm: AllDriversInSeasonVM(selectedYear: "\(season.season)"))
+                        AllDriversInSeasonView(
+                            vm: AllDriversInSeasonVM(
+                                selectedYear: "\(season.season)"
+                            )
+                        )
                     } label: {
                         SeasonDetailCell(title: "Drivers")
                     }

@@ -16,7 +16,8 @@ struct DriversImageGridCell: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(10)
         }
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 10)
+            .fill(Color.gray.opacity(0.3)))
         .padding(10)
     }
 }

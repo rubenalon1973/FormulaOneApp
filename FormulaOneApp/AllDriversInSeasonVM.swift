@@ -13,11 +13,16 @@ final class AllDriversInSeasonVM: ObservableObject {
     @Published var errorMessage = ""
     let selectedYear: String
     
-    init(repository: AllDriversInSeasonRepositoryProtocol = AllDriversInSeasonRepository.shared, selectedYear: String) {
+    init(
+        repository: AllDriversInSeasonRepositoryProtocol = AllDriversInSeasonRepository.shared,
+        selectedYear: String
+    ) {
         self.repository = repository
         self.selectedYear = selectedYear
         Task {
-            await fetchAllDriversInSeason(year: selectedYear)
+            await fetchAllDriversInSeason(
+                year: selectedYear
+            )
         }
     }
     

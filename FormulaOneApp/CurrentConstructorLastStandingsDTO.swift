@@ -45,8 +45,10 @@ extension ConstructorStandingsTableDTO {
     func mapToModel() -> ConstructorStandingsTable {
         let mappedLastStdList = lastStandingsLists.map { $0.mapToModel() }
         
-        return ConstructorStandingsTable(season: season,
-                                         lastStandingsLists: mappedLastStdList)
+        return ConstructorStandingsTable(
+            season: season,
+            lastStandingsLists: mappedLastStdList
+        )
     }
 }
 
@@ -65,9 +67,11 @@ extension ConstructorLastStandingsListDTO {
     func mapToModel() -> ConstructorLastStandingsList {
         let mappedConstructorLastStd = constructorLastStandings.map { $0.mapToModel() }
         
-        return ConstructorLastStandingsList(season: season,
-                                            round: round,
-                                            constructorLastStandings: mappedConstructorLastStd)
+        return ConstructorLastStandingsList(
+            season: season,
+            round: round,
+            constructorLastStandings: mappedConstructorLastStd
+        )
     }
 }
 
@@ -85,11 +89,13 @@ struct ConstructorLastStandingDTO: Codable {
 extension ConstructorLastStandingDTO {
     func mapToModel() -> ConstructorLastStanding {
         
-        return ConstructorLastStanding(position: position,
-                                       positionText: positionText,
-                                       points: points,
-                                       wins: wins,
-                                       constructor: constructor.mapToModel())
+        return ConstructorLastStanding(
+            position: position,
+            positionText: positionText,
+            points: points,
+            wins: wins,
+            constructor: constructor.mapToModel()
+        )
     }
 }
 
@@ -108,9 +114,11 @@ struct InfoConstructorDTO: Codable {
 extension InfoConstructorDTO {
     func mapToModel() -> InfoConstructor {
         
-        return InfoConstructor(constructorID: constructorID,
-                               url: url,
-                               name: name,
-                               nationality: nationality)
+        return InfoConstructor(
+            constructorID: constructorID,
+            url: url,
+            name: name,
+            nationality: nationality
+        )
     }
 }

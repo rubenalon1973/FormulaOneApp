@@ -698,11 +698,11 @@
 		80C809152B28EA2900E99C8B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				80C809162B28EA4800E99C8B /* ModelDTO */,
 				80A2013A2B3A1381004B3F82 /* AllCircuitsInSeason.swift */,
 				80A201392B3A1381004B3F82 /* AllConstructorsInSeason.swift */,
 				80A2013C2B3A1381004B3F82 /* AllDriversInSeason.swift */,
 				80A201382B3A1381004B3F82 /* AllSeasonTable.swift */,
-				80C809162B28EA4800E99C8B /* ModelDTO */,
 			);
 			name = Models;
 			sourceTree = "<group>";

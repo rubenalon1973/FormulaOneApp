@@ -22,11 +22,11 @@ struct AllSeasonTableListView: View {
                 }
             }
         }
-        .navigationBarTitle("All season", displayMode: .large)
+        .navigationTitle("All season")
         .foregroundStyle(.primary)
     }
 }
 #Preview {
     AllSeasonTableListView(allSeasonVM: .seasonTableVMTest)
-    }
+}
 

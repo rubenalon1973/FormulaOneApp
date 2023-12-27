@@ -17,6 +17,11 @@ final class ConstructorLastStdRepository: ConstructorLastStdRepositoryProtocol {
     private init() {}
     
     func getConstructorLastStd() async throws -> [ConstructorLastStandingsList] {
-        return try await getJSON(url: .getCurrentConstructorLastStdURL, type: CurrentConstructorLastStandingsDTO.self).mrDataConstructorLastStandings.standingsTable.lastStandingsLists.map { $0.mapToModel() }
+        return try await getJSON(
+            url: .getCurrentConstructorLastStdURL,
+            type: CurrentConstructorLastStandingsDTO.self
+        ).mrDataConstructorLastStandings.standingsTable.lastStandingsLists.map {
+            $0.mapToModel()
+        }
     }
 }

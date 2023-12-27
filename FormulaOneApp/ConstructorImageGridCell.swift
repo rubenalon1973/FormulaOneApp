@@ -18,7 +18,8 @@ struct ConstructorImageGridCell: View {
                 .padding(10)
         }
         .frame(maxWidth: .infinity, alignment: .center)
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 10)
+            .fill(Color.gray.opacity(0.3)))
         .padding(10)
     }
 }

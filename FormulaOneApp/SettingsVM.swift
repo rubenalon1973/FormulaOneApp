@@ -17,6 +17,23 @@ class SettingsVM: ObservableObject {
             UIApplication.shared.open(url)
         }
     }
+    
+    @MainActor
+    func changeAppIcon(iconName: String) async throws {
+        guard !iconName.isEmpty else {
+            throw NetworkErrors.urlRequestNotValid
+        }
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            UIApplication.shared.setAlternateIconName(iconName) { error in
+                if let _ = error {
+                    continuation.resume(throwing: NetworkErrors.badResponse)
+                } else {
+                    continuation.resume()
+                }
+            }
+        }
+    }
 }
 
 

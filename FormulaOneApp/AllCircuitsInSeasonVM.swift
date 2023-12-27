@@ -13,11 +13,16 @@ final class AllCircuitsInSeasonVM: ObservableObject {
     @Published var errorMessage = ""
     let selectedSeason: String
     
-    init(repository: AllCircuitInSeasonRepositoryProtocol = AllCircuitInSeasonRepository.shared, selectedSeason: String) {
+    init(
+        repository: AllCircuitInSeasonRepositoryProtocol = AllCircuitInSeasonRepository.shared,
+        selectedSeason: String
+    ) {
         self.repository = repository
         self.selectedSeason = selectedSeason
         Task {
-            await fetchAllCircuitsInSeason(season: selectedSeason)
+            await fetchAllCircuitsInSeason(
+                season: selectedSeason
+            )
         }
     }
     

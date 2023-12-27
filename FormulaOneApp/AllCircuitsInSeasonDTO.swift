@@ -45,8 +45,10 @@ extension AllCircuitsInSeasonTableDTO {
     func mapToModel() -> AllCircuitsInSeasonTable {
         let mappedCircuits = circuits.map { $0.mapToModel() }
         
-        return AllCircuitsInSeasonTable(season: season ?? "2023",
-                                        circuits: mappedCircuits)
+        return AllCircuitsInSeasonTable(
+            season: season ?? "2023",
+            circuits: mappedCircuits
+        )
     }
 }
 
@@ -66,10 +68,12 @@ struct CircuitInSeasonDTO: Codable {
 
 extension CircuitInSeasonDTO {
     func mapToModel() -> CircuitInSeason {
-        CircuitInSeason(circuitID: circuitID,
-                        url: url,
-                        circuitName: circuitName,
-                        location: location.mapToModel())
+        CircuitInSeason(
+            circuitID: circuitID,
+            url: url,
+            circuitName: circuitName,
+            location: location.mapToModel()
+        )
     }
 }
 // MARK: - Location
@@ -79,9 +83,11 @@ struct LocationInSeasonDTO: Codable {
 
 extension LocationInSeasonDTO {
     func mapToModel() -> LocationInSeason {
-        LocationInSeason(lat: lat,
-                         long: long,
-                         locality: locality,
-                         country: country)
+        LocationInSeason(
+            lat: lat,
+            long: long,
+            locality: locality,
+            country: country
+        )
     }
 }

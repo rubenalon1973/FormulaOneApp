@@ -27,11 +27,16 @@ struct CurrentRace: Identifiable, Hashable {
     let sprint: PracticeSession?
     
     var formattedDate: String {
-        return DateFormatter.shortDateFormat.string(from: date).capitalized
+        return DateFormatter.shortDateFormat.string(
+            from: date
+        ).capitalized
     }
     
     var formattedTime: String {
-        return time.replacingOccurrences(of: ":00Z", with: " ")
+        return time.replacingOccurrences(
+            of: ":00Z",
+            with: " "
+        )
     }
     
     var formattedCountryName: String {
@@ -48,7 +53,10 @@ struct CurrentRace: Identifiable, Hashable {
         } else if circuit.location.country == "United States" {
             return "Las Vegas"
         } else {
-            return circuit.location.country.replacingOccurrences(of: "_", with: " ")
+            return circuit.location.country.replacingOccurrences(
+                of: "_",
+                with: " "
+            )
         }
     }
 }
@@ -60,7 +68,10 @@ struct CurrentCircuit: Hashable {
     let location: CurrentLocation
     
     var formattedCircuitName: String {
-        return circuitName.replacingOccurrences(of: "_", with: " ")
+        return circuitName.replacingOccurrences(
+            of: "_",
+            with: " "
+        )
     }
 }
 
@@ -70,7 +81,13 @@ struct CurrentLocation: Hashable {
     var formattedLength: String {
         let absoluteLength = abs(Double(long) ?? 0)
         let roundedValue = (absoluteLength / 10)
-        return String(format: "%.3f", roundedValue).replacingOccurrences(of: ".", with: ",")
+        return String(
+            format: "%.3f",
+            roundedValue
+        ).replacingOccurrences(
+            of: ".",
+            with: ","
+        )
     }
 }
 
@@ -83,6 +100,9 @@ struct PracticeSession: Hashable {
     }
     
     var formattedTime: String {
-        return time.replacingOccurrences(of: ":00Z", with: " ")
+        return time.replacingOccurrences(
+            of: ":00Z",
+            with: " "
+        )
     }
 }

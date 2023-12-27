@@ -29,8 +29,7 @@ struct NextRacesView: View {
                         }
                     }
                 }
-            }
-        }
+            }        }
         .navigationDestination(for: CurrentRace.self, destination: { race in
             NextRaceDetailView(race: race)
         })

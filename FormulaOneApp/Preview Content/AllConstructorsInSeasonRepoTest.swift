@@ -14,12 +14,17 @@ final class AllConstructorsInSeasonRepoTest: AllConstructorInSeasonRepositoryPro
     func getAllConstructorsInSeason(year: String) async throws -> [ConstructorInSeason] {
         let data = try Data(contentsOf: urlConstructorInSeason)
         
-        return try JSONDecoder().decode(AllConstructorsInSeasonDTO.self, from: data).mrDataAllConstructorsInSeason.constructorTable.constructors.map { $0.mapToModel() }
+        return try JSONDecoder().decode(
+            AllConstructorsInSeasonDTO.self,
+            from: data
+        ).mrDataAllConstructorsInSeason.constructorTable.constructors.map {
+            $0.mapToModel()
+        }
     }
 }
 
 extension AllConstructorsInSeasonVM {
-    static let constructorsInSeasonVMTest = AllConstructorsInSeasonVM(selectedYear: "2023")
+    static let constructorsInSeasonVMTest = AllConstructorsInSeasonVM(selectedYear: "2024")
 }
 
 extension ConstructorInSeason {

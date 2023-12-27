@@ -25,7 +25,7 @@ final class CurrentRaceTableVM: ObservableObject {
         }
     }
     
-    //    MARK: Para tirar de JSON local si la API no responde
+    //    MARK: Func in case the API does not return data for this module at the end of the season, take them from Test
 //    @MainActor
 //    func fetchCurrentRaceTable() async {
 //        do {
@@ -37,7 +37,7 @@ final class CurrentRaceTableVM: ObservableObject {
 //            races = []
 //        }
 //    }
-    //    MARK: Para tirar de API
+
     @MainActor
     func fetchCurrentRaceTable() async {
         do {

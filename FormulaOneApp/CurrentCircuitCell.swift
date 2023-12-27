@@ -48,7 +48,8 @@ struct CurrentCircuitCell: View {
                         .scaledToFit()
                         .frame(width: size.rawValue)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3), lineWidth: 2))
+                        .overlay(RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray.opacity(0.3), lineWidth: 2))
                     Text("\(race.round) - \(race.formattedCountryName)")
                         .bold()
                     HStack {
@@ -82,12 +83,16 @@ struct CurrentCircuitCell: View {
 
 #Preview {
     VStack {
-        CurrentCircuitCell(race: .testRaceCell,
-                           size: .small,
-                           circuitFormat: .circuitAndText)
-        CurrentCircuitCell(race: .testRaceCell,
-                           size: .big,
-                           circuitFormat: .circuitRaceDetail)
+        CurrentCircuitCell(
+            race: .testRaceCell,
+            size: .small,
+            circuitFormat: .circuitAndText
+        )
+        CurrentCircuitCell(
+            race: .testRaceCell,
+            size: .big,
+            circuitFormat: .circuitRaceDetail
+        )
     }
 }
 

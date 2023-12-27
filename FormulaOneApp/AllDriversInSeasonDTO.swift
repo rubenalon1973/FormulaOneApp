@@ -45,8 +45,10 @@ extension AllDriversInSeasonTableDTO {
     func mapToModel() ->  AllDriversInSeasonTable {
         let mappedDriver = drivers.map { $0.mapToModel() }
         
-        return AllDriversInSeasonTable(season: season,
-                                       drivers: mappedDriver)
+        return AllDriversInSeasonTable(
+            season: season,
+            drivers: mappedDriver
+        )
     }
 }
 
@@ -66,13 +68,15 @@ struct DriverInSeasonDTO: Codable {
 
 extension DriverInSeasonDTO {
     func mapToModel() -> DriverInSeason {
-        DriverInSeason(driverID: driverID,
-                       permanentNumber: permanentNumber ?? "",
-                       code: code ?? "",
-                       url: url,
-                       givenName: givenName,
-                       familyName: familyName,
-                       dateOfBirth: dateOfBirth,
-                       nationality: nationality)
+        DriverInSeason(
+            driverID: driverID,
+            permanentNumber: permanentNumber ?? "",
+            code: code ?? "",
+            url: url,
+            givenName: givenName,
+            familyName: familyName,
+            dateOfBirth: dateOfBirth,
+            nationality: nationality
+        )
     }
 }

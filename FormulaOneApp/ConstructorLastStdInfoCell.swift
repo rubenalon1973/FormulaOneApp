@@ -45,5 +45,7 @@ struct ConstructorLastStdInfoCell: View {
 }
 
 #Preview {
-    ConstructorLastStdInfoCell(constructor: .testConstructorLastStanding)
+    ConstructorLastStdInfoCell(
+        constructor: .testConstructorLastStanding
+    )
 }

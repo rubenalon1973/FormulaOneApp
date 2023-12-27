@@ -32,6 +32,12 @@ struct LocationInSeason: Codable, Hashable {
     var formattedLength: String {
         let absoluteLength = abs(Double(long) ?? 0)
         let roundedValue = (absoluteLength / 10)
-        return String(format: "%.3f", roundedValue).replacingOccurrences(of: ".", with: ",")
+        return String(
+            format: "%.3f",
+            roundedValue
+        ).replacingOccurrences(
+            of: ".",
+            with: ","
+        )
     }
 }

@@ -13,15 +13,21 @@ struct ConstructorInfoDetailView: View {
     
     var body: some View {
         ScrollView {
-            ConstructorImageCell(constructor: constructor)
-            ConstructorInfoDetailCell(constructorVM: constructorVM,
-                                      constructor: constructor)
+            ConstructorImageCell(
+                constructor: constructor
+            )
+            ConstructorInfoDetailCell(
+                constructorVM: constructorVM,
+                constructor: constructor
+            )
         }
     }
 }
 
 #Preview {
-    ConstructorInfoDetailView(constructorVM: .constructorVMTest,
-                              constructor: .testCurrentConstructorInfo)
+    ConstructorInfoDetailView(
+        constructorVM: .constructorVMTest,
+        constructor: .testCurrentConstructorInfo
+    )
 }
 

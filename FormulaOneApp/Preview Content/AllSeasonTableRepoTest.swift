@@ -13,12 +13,19 @@ final class AllSeasonTableRepoTest: AllSeasonTableRepositoryProtocol {
     func getAllSeasonTable() async throws -> [Season] {
         let data = try Data(contentsOf: urlSeasonTable)
 
-        return try JSONDecoder().decode(AllSeasonsDTO.self, from: data).mrDataAllSeasons.seasonTable.seasons.map { $0.mapToModel() }
+        return try JSONDecoder().decode(
+            AllSeasonsDTO.self,
+            from: data
+        ).mrDataAllSeasons.seasonTable.seasons.map {
+            $0.mapToModel()
+        }
     }
 }
 
 extension AllSeasonTableVM {
-    static let seasonTableVMTest = AllSeasonTableVM(repository: AllSeasonTableRepoTest())
+    static let seasonTableVMTest = AllSeasonTableVM(
+        repository: AllSeasonTableRepoTest()
+    )
 }
 
 extension Season {

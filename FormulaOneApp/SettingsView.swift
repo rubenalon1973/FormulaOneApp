@@ -28,7 +28,7 @@ struct SettingsView: View {
                     }
                     
                     NavigationLink {
-                        IconSelectionView()
+                        IconSelectionView(settingsVM: settingsVM)
                     } label: {
                         SettingsCell(icon: "flag.checkered", title: "Change App Icon")
                     }

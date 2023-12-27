@@ -14,15 +14,21 @@ struct DriverInfoDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                DriverInfoImageCell(driver: driver)
-                DriverInfoDetailCell(driverVM: driverVM,
-                                     driver: driver)
+                DriverInfoImageCell(
+                    driver: driver
+                )
+                DriverInfoDetailCell(
+                    driverVM: driverVM,
+                    driver: driver
+                )
             }
         }
     }
 }
 
 #Preview {
-    DriverInfoDetailView(driverVM: .driverInfoVMTest,
-                         driver: .testCurrentDriverInfo)
+    DriverInfoDetailView(
+        driverVM: .driverInfoVMTest,
+        driver: .testCurrentDriverInfo
+    )
 }

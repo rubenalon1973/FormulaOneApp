@@ -32,7 +32,9 @@ struct WeekendScheduleBigCell: View {
                 }
             }
             .frame(width: 190, height: 100)
-            .background(RoundedRectangle(cornerRadius: 10).fill(.gray.opacity(0.3)).shadow(radius: 5))
+            .background(RoundedRectangle(cornerRadius: 10)
+                .fill(.gray.opacity(0.3))
+                .shadow(radius: 5))
             Section {
                 VStack {
                     Text("LENGTH")
@@ -47,7 +49,9 @@ struct WeekendScheduleBigCell: View {
                 }
             }
             .frame(width: 180, height: 100)
-            .background(RoundedRectangle(cornerRadius: 10).fill(.gray.opacity(0.3)).shadow(radius: 5))
+            .background(RoundedRectangle(cornerRadius: 10)
+                .fill(.gray.opacity(0.3))
+                .shadow(radius: 5))
         }
     }
 }

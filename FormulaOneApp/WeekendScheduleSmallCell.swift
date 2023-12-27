@@ -41,7 +41,8 @@ struct WeekendScheduleSmallCell: View {
                     }
                     .frame(width: 190, height: 50)
                     .background(RoundedRectangle(cornerRadius: 10)
-                        .fill(.gray.opacity(0.3)).shadow(radius: 5))
+                        .fill(.gray.opacity(0.3))
+                        .shadow(radius: 5))
                 }
             }
             
@@ -56,6 +57,7 @@ struct WeekendScheduleSmallCell: View {
                                 .font(.headline)
                                 .bold()
                         }
+                        
                         HStack {
                             Text(race.secondPractice.formattedDate)
                                 .font(.headline)
@@ -74,6 +76,7 @@ struct WeekendScheduleSmallCell: View {
                                     .bold()
                             }
                         }
+                        
                         HStack {
                             Text(race.qualifying.formattedDate)
                                 .font(.headline)
@@ -82,6 +85,7 @@ struct WeekendScheduleSmallCell: View {
                                 .font(.headline)
                                 .bold()
                         }
+                        
                         if race.sprint != nil {
                             HStack {
                                 Text(race.sprint?.formattedDate ?? "")
@@ -92,6 +96,7 @@ struct WeekendScheduleSmallCell: View {
                                     .bold()
                             }
                         }
+                        
                         HStack {
                             Text(race.formattedDate)
                                 .font(.headline)
@@ -103,7 +108,8 @@ struct WeekendScheduleSmallCell: View {
                     }
                     .frame(width: 180, height: 50)
                     .background(RoundedRectangle(cornerRadius: 10)
-                        .fill(.gray.opacity(0.3)).shadow(radius: 5))
+                        .fill(.gray.opacity(0.3))
+                        .shadow(radius: 5))
                 }
             }
         }

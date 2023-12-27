@@ -18,6 +18,16 @@ final class AllConstructrorsInSeasonRepository: AllConstructorInSeasonRepository
     
     func getAllConstructorsInSeason(year: String) async throws -> [ConstructorInSeason] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getAllConstructorsInSeasonURL(year: year), limit: 30), type: AllConstructorsInSeasonDTO.self).mrDataAllConstructorsInSeason.constructorTable.constructors.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getAllConstructorsInSeasonURL(
+                    year: year
+                ),
+                limit: 30
+            ),
+            type: AllConstructorsInSeasonDTO.self
+        ).mrDataAllConstructorsInSeason.constructorTable.constructors.map {
+            $0.mapToModel()
+        }
     }
 }

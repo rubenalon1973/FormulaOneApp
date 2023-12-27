@@ -12,7 +12,9 @@ final class AllSeasonTableVM: ObservableObject {
     @Published var seasons: [Season] = []
     @Published var errorMessage = ""
     
-    init(repository: AllSeasonTableRepositoryProtocol = AllSeasonTableRepository.shared) {
+    init(
+        repository: AllSeasonTableRepositoryProtocol = AllSeasonTableRepository.shared
+    ) {
         self.repository = repository
         Task {
             await fetchAllSeasons()

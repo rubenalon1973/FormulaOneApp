@@ -18,6 +18,14 @@ final class AllSeasonTableRepository: AllSeasonTableRepositoryProtocol {
     
     func getAllSeasonTable() async throws -> [Season] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getAllSeasonTableURL, limit: 77), type: AllSeasonsDTO.self).mrDataAllSeasons.seasonTable.seasons.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getAllSeasonTableURL,
+                limit: 77
+            ),
+            type: AllSeasonsDTO.self
+        ).mrDataAllSeasons.seasonTable.seasons.map {
+            $0.mapToModel()
+        }
     }
 }

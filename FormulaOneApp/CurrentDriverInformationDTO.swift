@@ -64,13 +64,15 @@ struct CurrentDriverInfoDTO: Codable {
 
 extension CurrentDriverInfoDTO {
     func mapToModel() -> CurrentDriverInfo {
-        CurrentDriverInfo(driverID: driverID,
-                          permanentNumber: permanentNumber,
-                          code: code,
-                          url: url,
-                          givenName: givenName,
-                          familyName: familyName,
-                          dateOfBirth: dateOfBirth,
-                          nationality: nationality)
+        CurrentDriverInfo(
+            driverID: driverID,
+            permanentNumber: permanentNumber,
+            code: code,
+            url: url,
+            givenName: givenName,
+            familyName: familyName,
+            dateOfBirth: dateOfBirth,
+            nationality: nationality
+        )
     }
 }

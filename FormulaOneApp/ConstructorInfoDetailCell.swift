@@ -33,12 +33,15 @@ struct ConstructorInfoDetailCell: View {
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.3)))
+        .background(RoundedRectangle(cornerRadius: 10)
+            .fill(Color.gray.opacity(0.3)))
         .padding(10)
     }
 }
 
 #Preview {
-    ConstructorInfoDetailCell(constructorVM: .constructorVMTest,
-                              constructor: .testCurrentConstructorInfo)
+    ConstructorInfoDetailCell(
+        constructorVM: .constructorVMTest,
+        constructor: .testCurrentConstructorInfo
+    )
 }

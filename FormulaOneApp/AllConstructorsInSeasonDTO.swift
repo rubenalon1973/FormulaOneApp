@@ -45,8 +45,10 @@ extension AllConstructorsInSeasonTableDTO {
     func mapToModel() -> AllConstructorsInSeasonTable {
         let mappedConstructor = constructors.map { $0.mapToModel() }
         
-        return AllConstructorsInSeasonTable(season: season,
-                                            constructors: mappedConstructor)
+        return AllConstructorsInSeasonTable(
+            season: season,
+            constructors: mappedConstructor
+        )
     }
 }
 
@@ -64,9 +66,11 @@ struct ConstructorInSeasonDTO: Codable {
 
 extension ConstructorInSeasonDTO {
     func mapToModel() -> ConstructorInSeason {
-        ConstructorInSeason(constructorID: constructorID,
-                            url: url,
-                            name: name,
-                            nationality: nationality)
+        ConstructorInSeason(
+            constructorID: constructorID,
+            url: url,
+            name: name,
+            nationality: nationality
+        )
     }
 }

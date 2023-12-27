@@ -18,6 +18,11 @@ final class RaceResultsRepository: RaceResultsRepositoryProtocol {
     
     func getRacesResults() async throws -> [Race] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getCurrentAllResultsURL,limit: 350), type: CurrentResultsRaceTableDTO.self).mrDataCurrentResults.raceTable.races.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getCurrentAllResultsURL,
+                limit: 350),
+            type: CurrentResultsRaceTableDTO.self)
+        .mrDataCurrentResults.raceTable.races.map { $0.mapToModel() }
     }
 }

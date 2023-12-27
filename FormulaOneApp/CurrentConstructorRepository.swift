@@ -18,6 +18,14 @@ final class CurrentConstructorRepository:CurrentConstructorRepositoryProtocol {
     
     func getCurrentConstructorInfo() async throws -> [CurrentConstructorInfo] {
         
-        return try await getJSONRequest(request: .getCurrentResultsRequest(url: .getCurrentConstructorsInfoURL, limit: 35), type: CurrentConstructorsInfoDTO.self).mrDataCurrentConstructors.constructorTable.constructors.map { $0.mapToModel() }
+        return try await getJSONRequest(
+            request: .getCurrentResultsRequest(
+                url: .getCurrentConstructorsInfoURL,
+                limit: 35
+            ),
+            type: CurrentConstructorsInfoDTO.self
+        ).mrDataCurrentConstructors.constructorTable.constructors.map {
+            $0.mapToModel()
+        }
     }
 }

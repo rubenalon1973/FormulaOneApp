@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct IconSelectionView: View {
+    @ObservedObject var settingsVM: SettingsVM
     let iconOptions = ["AppIcon-1", "AppIcon-2", "AppIcon-3", "AppIcon-5"]
-    
     @State private var selectedIcon = "AppIcon-1"
     @State private var showAlert = false
     @State private var alertMessage = ""
+    @State private var errorMessage = ""
     
     var body: some View {
         VStack {
@@ -34,7 +35,16 @@ struct IconSelectionView: View {
             .padding()
             
             Button(action: {
-                changeAppIcon(iconName: selectedIcon)
+                Task {
+                    do {
+                        try  await settingsVM.changeAppIcon(iconName: selectedIcon)
+                    } catch let error as NetworkErrors {
+                        errorMessage = error.localizedDescription
+                        _ = ""
+                    } catch {
+                        _ = ""
+                    }
+                }
             }) {
                 Text("Confirm Selection")
                     .foregroundColor(.white)
@@ -57,8 +67,22 @@ struct IconSelectionView: View {
         .background(RoundedRectangle(cornerRadius: 10)
             .fill(Color.gray.opacity(0.3)))
         .padding(10)
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("App Icon Changed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+        .alert(
+            isPresented: $showAlert
+        ) {
+            Alert(
+                title: Text(
+                    "App Icon Changed"
+                ),
+                message: Text(
+                    alertMessage
+                ),
+                dismissButton: .default(
+                    Text(
+                        "OK"
+                    )
+                )
+            )
         }
     }
     
@@ -66,17 +90,8 @@ struct IconSelectionView: View {
         alertMessage = message
         showAlert = true
     }
-    
-    func changeAppIcon(iconName: String) {
-        UIApplication.shared.setAlternateIconName(iconName) { cosa in
-            if let cosa {
-                print(cosa)
-            }
-            
-        }
-    }
 }
 
 #Preview {
-    IconSelectionView()
+    IconSelectionView(settingsVM: SettingsVM())
 }

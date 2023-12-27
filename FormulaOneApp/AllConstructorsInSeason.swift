@@ -24,7 +24,10 @@ struct ConstructorInSeason: Codable, Identifiable {
     }
     
     var formattedConstructorID: String {
-        let replacedID = constructorID.replacingOccurrences(of: "_", with: " ")
+        let replacedID = constructorID.replacingOccurrences(
+            of: "_",
+            with: " "
+        )
         return replacedID.capitalized
     }
 }

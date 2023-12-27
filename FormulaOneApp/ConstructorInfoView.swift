@@ -21,8 +21,7 @@ struct ConstructorInfoView: View {
                 }
             }
         }
-        .navigationDestination(for: CurrentConstructorInfo.self,
-                               destination: { constructor in
+        .navigationDestination(for: CurrentConstructorInfo.self, destination: { constructor in
             ConstructorInfoDetailView(
                 constructorVM: constructorVM,
                 constructor: constructor
