@@ -13,7 +13,7 @@ struct RaceResultView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(raceVM.reversedRaceResults, id: \.results) { result in
+                ForEach(raceVM.reversedRaceResults) { result in
                     NavigationLink(value: result) {
                         RaceCell(race: result)
                     }

@@ -25,7 +25,7 @@ let urlCircuitInSeason = Bundle.main.url(forResource: "AllCircuitsInSeasonTest",
 }
 
 extension AllCircuitsInSeasonVM {
-    static let circuitsInSeasonVMTest = AllCircuitsInSeasonVM(selectedSeason: "2024")
+    static let circuitsInSeasonVMTest = AllCircuitsInSeasonVM(selectedSeason: "2023")
 }
 
 extension CircuitInSeason {

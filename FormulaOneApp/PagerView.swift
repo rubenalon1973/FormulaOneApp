@@ -56,7 +56,6 @@ struct PagerView: View {
     }
 }
 
-
 #Preview {
     PagerView(firstLaunch: .constant(false))
 }

@@ -31,9 +31,9 @@ enum NetworkErrors: String, Error {
 }
 
 extension URLSession {
-    func dataRequest(urlR: URLRequest) async throws -> (Data, URLResponse) {
+    func dataRequest(urlReq: URLRequest) async throws -> (Data, URLResponse) {
         do {
-            return try await data(for: urlR)
+            return try await data(for: urlReq)
         } catch {
             throw NetworkErrors.urlRequestNotValid
         }

@@ -20,8 +20,7 @@ struct PageView: View {
                        minHeight: 1,
                        maxHeight: .infinity)
             
-            Color.black
-                .opacity(0.3)
+            Color.black.opacity(0.3)
             
             VStack(alignment: .leading, spacing: -60) {
                 Text(page.title)

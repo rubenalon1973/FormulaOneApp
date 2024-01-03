@@ -95,9 +95,10 @@ struct HomeView: View {
                             Image(systemName: "flag.filled.and.flag.crossed")
                                 .foregroundColor(Color.blue)
                             Text("History")
-                                .font(.caption)
+                                .font(.caption2)
                                 .bold()
                                 .foregroundColor(Color.blue)
+                            Spacer()
                         }
                     }
                 }

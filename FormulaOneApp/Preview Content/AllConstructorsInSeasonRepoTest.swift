@@ -24,7 +24,7 @@ final class AllConstructorsInSeasonRepoTest: AllConstructorInSeasonRepositoryPro
 }
 
 extension AllConstructorsInSeasonVM {
-    static let constructorsInSeasonVMTest = AllConstructorsInSeasonVM(selectedYear: "2024")
+    static let constructorsInSeasonVMTest = AllConstructorsInSeasonVM(selectedYear: "2023")
 }
 
 extension ConstructorInSeason {

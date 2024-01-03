@@ -23,7 +23,7 @@ final class AllDriversInSeasonRepoTest: AllDriversInSeasonRepositoryProtocol {
 }
 
 extension AllDriversInSeasonVM {
-    static let driversInSeasonVMTest = AllDriversInSeasonVM(selectedYear: "2024")
+    static let driversInSeasonVMTest = AllDriversInSeasonVM(selectedYear: "2023")
 }
 
 extension DriverInSeason {

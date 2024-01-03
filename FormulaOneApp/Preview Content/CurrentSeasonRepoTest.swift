@@ -23,7 +23,7 @@ final class CurrentSeasonRepoTest: CurrentRaceTableRepositoryProtocol {
         }
     }
     
-//    MARK: Func in case the API does not return data for this module at the end of the season, take them from Test
+//    MARK: Func in case the API does not return data for this module at the end of the current season, take them from Test
 //    func getDemoRaceTable() async throws -> [CurrentRace] {
 //        let urlDemoRaceTable = Bundle.main.url(forResource: "CurrentSeasonDemoData", withExtension: "json")!
 //        

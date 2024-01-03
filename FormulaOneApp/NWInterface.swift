@@ -10,7 +10,7 @@ import Foundation
 let mainURL = URL(string: "https://ergast.com/api/f1")!
 
 extension URL {
-//    MARK: Current Season
+    //   MARK: Current Season
     static let getCurrentRaceTableURL = mainURL.appending(path: "current.json")
     static let getCurrentAllResultsURL = mainURL.appending(path: "current/results.json")
     static let getCurrentDriverInfoURL = mainURL.appending(path: "current/drivers.json")
@@ -33,9 +33,5 @@ extension URL {
     //    MARK: List of drivers for each season
     static func getAllDriversInSeasonURL(year: String) -> URL {
         mainURL.appending(path: "\(year)/drivers.json")
-    }
-    //    MARK: List of drivers champions for each season
-    static func getDriverStandingInSeasonURL(driverID: String) -> URL {
-        mainURL.appending(path: "drivers/\(driverID)/driverStandings.json")
     }
 }

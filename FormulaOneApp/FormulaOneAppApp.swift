@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct FormulaOneAppApp: App {
-    @AppStorage("FirstLaunch") var firstLaunch = true
+    @AppStorage("FirstLaunch") 
+    var firstLaunch = true
     
     var body: some Scene {
         WindowGroup {

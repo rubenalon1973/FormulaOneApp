@@ -366,7 +366,6 @@
 			children = (
 				80C808FD2B28E8D800E99C8B /* WellcomScreen */,
 				80C808FC2B28E8CA00E99C8B /* Home */,
-				80C808C92B28DFAE00E99C8B /* HomeView.swift */,
 				80C808FB2B28E8BD00E99C8B /* CurrentNextRaces */,
 				80C808FA2B28E8B200E99C8B /* CurrentResults */,
 				80C808F92B28E8A700E99C8B /* CurrentDrivers */,
@@ -465,6 +464,7 @@
 		80C808FC2B28E8CA00E99C8B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				80C808C92B28DFAE00E99C8B /* HomeView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
