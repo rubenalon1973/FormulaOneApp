@@ -59,6 +59,10 @@ struct CurrentRace: Identifiable, Hashable {
             )
         }
     }
+    
+    var circuitImageName: String {
+        return "img_" + circuit.circuitID
+    }
 }
 
 struct CurrentCircuit: Hashable {

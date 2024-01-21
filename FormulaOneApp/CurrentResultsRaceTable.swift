@@ -73,6 +73,9 @@ struct Race: Hashable, Identifiable {
         }
     }
     
+    var circuitImageName: String {
+        return "img_" + circuit.circuitID
+    }
 }
 
 struct Circuit: Hashable {

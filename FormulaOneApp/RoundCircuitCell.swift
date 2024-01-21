@@ -11,7 +11,7 @@ struct RoundCircuitCell: View {
     let circuit: Race
     
     var body: some View {
-        Image("img_" + circuit.circuit.circuitID.lowercased())
+        Image(circuit.circuitImageName.lowercased())
             .resizable()
             .scaledToFit()
             .clipShape(RoundedRectangle(cornerRadius: 10))

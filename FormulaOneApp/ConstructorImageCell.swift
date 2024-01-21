@@ -12,7 +12,7 @@ struct ConstructorImageCell: View {
     
     var body: some View {
         VStack {
-            Image("img_" + constructor.constructorID.lowercased())
+            Image(constructor.constructorImageName)
                 .resizable()
                 .scaledToFit()
                 .padding(5)

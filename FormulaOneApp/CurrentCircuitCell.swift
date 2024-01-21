@@ -43,7 +43,7 @@ struct CurrentCircuitCell: View {
                                 .bold()
                         }
                     }
-                    Image("img_" + race.circuit.circuitID)
+                    Image(race.circuitImageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: size.rawValue)
@@ -65,7 +65,7 @@ struct CurrentCircuitCell: View {
                 }
             case .circuitRaceDetail:
                 VStack {
-                    Image("img_" + race.circuit.circuitID.lowercased())
+                    Image(race.circuitImageName.lowercased())
                         .resizable()
                         .scaledToFit()
                         .frame(width: size.rawValue)

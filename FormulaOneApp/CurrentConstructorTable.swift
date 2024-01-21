@@ -22,4 +22,8 @@ struct CurrentConstructorInfo: Codable, Identifiable, Hashable {
         case constructorID = "constructorId"
         case url, name, nationality
     }
+    
+    var constructorImageName: String {
+        return "img_" + constructorID.lowercased()
+    }
 }
