@@ -12,6 +12,7 @@ extension URLRequest {
         var request = URLRequest(url: url)
         request.url?.append(queryItems: [URLQueryItem(name: "limit", value: String(limit))])
         request.httpMethod = "GET"
+
         return request
     }
 }

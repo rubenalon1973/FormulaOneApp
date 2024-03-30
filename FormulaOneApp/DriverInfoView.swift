@@ -14,7 +14,7 @@ struct DriverInfoView: View {
         ScrollView {
             LazyVStack {
                 DriversImageGridCell()
-                ForEach(driverVM.driverInfo) { driver in
+                ForEach(driverVM.driversOrderedByLastStandings) { driver in
                     NavigationLink(value: driver) {
                         DriverInfoCell(driver: driver)
                     }

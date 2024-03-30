@@ -20,17 +20,29 @@ final class RaceResultsVM: ObservableObject {
     }
     
     var reversedRaceResults: [Race] {
-        return raceResults.reversed()
+        raceResults.reversed()
     }
     
     @MainActor
     func fetchRaceResults() async {
+        
+        //TODO: Quitar print
+        print("Fetching race results...")
         do {
             self.raceResults = try await repository.getRacesResults()
+            
+            //TODO: Quitar print
+            print("Race results fetched successfully: \(raceResults.count) items")
         } catch let error as NetworkErrors {
+            
+            //TODO: Quitar print
+            print("Error fetching race results: \(error.localizedDescription)")
             errorMessage = error.localizedDescription
             raceResults = []
         } catch {
+            
+            //TODO: Quitar print
+            print("An unexpected error occurred")
             raceResults = []
         }
     }

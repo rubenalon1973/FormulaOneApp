@@ -23,6 +23,23 @@ final class CurrentDriverInfoVM: ObservableObject {
         }
     }
     
+    // Ordenar la información del piloto basándose en las últimas posiciones de la clasificación
+    var driversOrderedByLastStandings: [CurrentDriverInfo] {
+        // Construye un diccionario para mapear driverID a su posición en la clasificación
+        let standingsDictionary = driverLastStd
+            .flatMap { $0.driverLastStandings }
+            .reduce(into: [:]) { (dict, standing) in
+                dict[standing.driver.driverID] = Int(standing.position) ?? 0
+            }
+        
+        // Ordena driverInfo basándose en el diccionario de posiciones
+        return driverInfo.sorted {
+            let pos1 = standingsDictionary[$0.driverID] ?? Int.max
+            let pos2 = standingsDictionary[$1.driverID] ?? Int.max
+            return pos1 < pos2
+        }
+    }
+    
     @MainActor
     func fetchDriverInfo() async {
         do {

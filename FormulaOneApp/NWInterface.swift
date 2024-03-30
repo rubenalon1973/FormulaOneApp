@@ -12,7 +12,7 @@ let mainURL = URL(string: "https://ergast.com/api/f1")!
 extension URL {
     //   MARK: Current Season
     static let getCurrentRaceTableURL = mainURL.appending(path: "current.json")
-    static let getCurrentAllResultsURL = mainURL.appending(path: "current/results.json")
+    static let getCurrentAllResultsURL = mainURL.appendingPathComponent("current/results.json")
     static let getCurrentDriverInfoURL = mainURL.appending(path: "current/drivers.json")
     static let getCurrentDriverLastStdURL = mainURL.appending(path: "current/driverStandings.json")
     static let getCurrentConstructorsInfoURL = mainURL.appending(path: "current/constructors.json")

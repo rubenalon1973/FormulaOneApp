@@ -20,9 +20,10 @@ final class CurrentRaceTableVM: ObservableObject {
     }
     
     var orderedRaces: [CurrentRace] {
+        let now = Date.now
         return races.filter { race in
-            race.date >= Date.now
-        }
+            race.date >= now
+        }.sorted { $0.date < $1.date }
     }
     
     //    MARK: Func in case the API does not return data for this module at the end of the season, take them from Test

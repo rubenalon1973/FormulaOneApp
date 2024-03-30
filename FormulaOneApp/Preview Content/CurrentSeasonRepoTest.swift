@@ -43,7 +43,7 @@ extension CurrentRaceTableVM {
 
 extension CurrentRace {
     static let testRaceCell = CurrentRace(
-        season: "2023",
+        season: "2024",
         round: "17",
         url: "https://en.wikipedia.org/wiki/2023_Qatar_Grand_Prix",
         raceName: "Qatar Grand Prix",
@@ -59,36 +59,36 @@ extension CurrentRace {
             )
         ),
         date: DateFormatter.longDateFormat.date(
-            from: "2023-10-08"
+            from: "2024-10-08"
         )!,
         time: "14:00",
         firstPractice: PracticeSession(
             date: DateFormatter.longDateFormat.date(
-                from: "2023-10-06"
+                from: "2024-10-06"
             )!,
             time: "10:30:00Z"
         ),
         secondPractice: PracticeSession(
             date: DateFormatter.longDateFormat.date(
-                from: "2023-10-06"
+                from: "2024-10-06"
             )!,
             time: "14:00:00Z"
         ),
         thirdPractice: PracticeSession(
             date: DateFormatter.longDateFormat.date(
-                from: "2023-10-07"
+                from: "2024-10-07"
             )!,
             time: "10:30:00Z"
         ),
         qualifying: PracticeSession(
             date: DateFormatter.longDateFormat.date(
-                from: "2023-10-07"
+                from: "2024-10-07"
             )!,
             time: "14:30:00Z"
         ),
         sprint: PracticeSession(
             date: DateFormatter.longDateFormat.date(
-                from: "2023-10-07"
+                from: "2024-10-07"
             )!,
             time: "14:30:00Z"
         )

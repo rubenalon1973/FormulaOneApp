@@ -159,6 +159,8 @@ enum ConstructorID: String, Codable {
     case mercedes = "mercedes"
     case redBull = "red_bull"
     case williams = "williams"
+    case sauber = "sauber"
+    case rb = "rb"
 }
 
 enum ConstructorName: String, Codable {
@@ -172,6 +174,8 @@ enum ConstructorName: String, Codable {
     case mercedes = "Mercedes"
     case redBull = "Red Bull"
     case williams = "Williams"
+    case sauber = "Sauber"
+    case rb = "RB F1 Team"
 }
 
 enum ConstructorNationality: String, Codable {
